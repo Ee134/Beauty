@@ -1,0 +1,64 @@
+{
+  "_meta": {
+    "notice": "演示规则：阈值均标注 threshold_source=demo_rule、approval_status=demo。这些阈值不是医学依据，也不是经审核的业务规则；真实部署必须替换为经审核规则并单独审批。",
+    "spec": "BeautyCare_Agent_Spec_v1_2.md 21.2"
+  },
+  "rules": [
+    {
+      "service_type": "outdoor_support",
+      "description": "已确认的户外活动开始前，若该时段紫外线指数达到演示阈值，则生成带产品依据的提醒卡片。",
+      "conditions": {
+        "activity_type": "outdoor",
+        "lead_minutes": 120,
+        "uv_index_gte": 6,
+        "require_confirmed_activity": true,
+        "require_fresh_forecast": true
+      },
+      "threshold_source": "demo_rule",
+      "approval_status": "demo",
+      "cooldown_minutes": 720,
+      "min_interval_minutes": 1440,
+      "notes": "UV 阈值 6 为演示值，用于展示触发逻辑，不代表医学或官方建议。"
+    },
+    {
+      "service_type": "travel_support",
+      "description": "行程开始前 48 小时内，基于目的地天气预报生成出行清单与计划调整草稿。",
+      "conditions": {
+        "activity_type": "trip",
+        "lead_hours": 48,
+        "require_confirmed_activity": true,
+        "require_fresh_forecast": true
+      },
+      "threshold_source": "demo_rule",
+      "approval_status": "demo",
+      "cooldown_minutes": 1440,
+      "min_interval_minutes": 1440,
+      "notes": "未覆盖的预报日期必须显示未知。"
+    },
+    {
+      "service_type": "environment_checkin",
+      "description": "湿度较前一日出现明显下降，且用户近期有相关反馈时，询问是否复核当前流程（低频率）。",
+      "conditions": {
+        "humidity_drop_pct_gte": 15,
+        "window_hours": 24,
+        "requires_user_report": true,
+        "max_per_week": 1
+      },
+      "threshold_source": "demo_rule",
+      "approval_status": "demo",
+      "cooldown_minutes": 10080,
+      "min_interval_minutes": 10080,
+      "notes": "只有天气变化没有用户反馈时，不生成确定肤况结论；最多按已授权偏好做低频询问。"
+    },
+    {
+      "service_type": "service_progress",
+      "description": "已提交工单的跟进任务到期，推送进度提醒。",
+      "conditions": {"followup_due": true, "require_ticket_status": ["submitted", "in_review", "awaiting_user"]},
+      "threshold_source": "demo_rule",
+      "approval_status": "demo",
+      "cooldown_minutes": 1440,
+      "min_interval_minutes": 1440,
+      "notes": "工单状态以本地演示工作台为准。"
+    }
+  ]
+}

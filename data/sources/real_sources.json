@@ -1,0 +1,340 @@
+{
+  "_meta": {
+    "notice": "真实 SKU 与真实成分资料：URL 与引文均为 2026-10-15 实际抓取并核对的内容。审核由 MVP 演示种子流程完成（reviewed_by=demo_seed），不是品牌官方审核，也不是皮肤科医生审核。",
+    "reviewed_by": "demo_seed",
+    "retrieved_at": "2026-10-15T12:38:04Z",
+    "irritancy_mapping_rule": "成分致敏等级映射规则（可复现）：来源明确写“slightly irritating” -> low；来源 GHS 分类含 H315（皮肤刺激）-> moderate；含 H317（皮肤致敏）-> high；无相关分类 -> unknown。这些是工业化学品危害分类汇总，不等同于化妆品成品的刺激性结论，已在每条 note 中标注。",
+    "fetch_notes": [
+      "PubChem 化合物 HTML 页面在抓取时被 reCAPTCHA 拦截，改用 NCBI 官方机器可读端点 https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/{cid}/JSON 获取同一记录。",
+      "cosing.ec.europa.eu 在本环境 DNS 不可解析，因此未使用 CosIng 数据。",
+      "laroche-posay.us / .co.uk / .ca / .fr 返回 403，改用官方德国站（EU 区域）。",
+      "Retinol 记录中没有任何关于光稳定性或“需配合防晒”的表述，因此未生成该类生活延伸。"
+    ]
+  },
+  "sources": [
+    {
+      "key": "SRC-REAL-PUBCHEM-NIACINAMIDE",
+      "product_key": null,
+      "source_type": "science_database",
+      "title": "PubChem CID 936 · Nicotinamide（烟酰胺）记录",
+      "publisher": "National Center for Biotechnology Information (NCBI), NLM, NIH — PubChem",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/936",
+      "file_ref": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/936/JSON",
+      "region": "INT",
+      "retrieved_at": "2026-10-15T12:38:04+00:00",
+      "reviewed_at": "2026-10-15T13:00:00+00:00",
+      "status": "approved",
+      "approval_note": "真实公开来源，URL/端点实测可访问；审核人=demo_seed（MVP 演示流程），非品牌或医学审核。致敏性数据为 ECHA C&L 工业危害分类汇总，不是化妆品成品结论。",
+      "is_demo": false,
+      "chunks": [
+        {
+          "locator": "Chemical and Physical Properties > Chemical Classes > Cosmetics",
+          "heading": "化妆品原料分类（CIR）",
+          "text": "Cosmetic ingredients (Niacinamide) -> CIR (Cosmetic Ingredient Review); Smoothing; Personal care product -> emollient -> amide。中文说明：烟酰胺被登记为化妆品原料，按 CIR 归类于个人护理产品成分（润肤剂—酰胺类），作用类别标注为 Smoothing（柔滑/平滑）。",
+          "claim_types": ["effect"],
+          "structured": {"effect_text": "登记为化妆品原料，CIR 归类为个人护理成分（润肤剂—酰胺类），作用类别为 Smoothing（柔滑/平滑）"}
+        },
+        {
+          "locator": "Safety and Hazards > Hazards Identification > GHS Classification",
+          "heading": "GHS 危害分类（ECHA C&L 汇总）",
+          "text": "H315 (28.6%): Causes skin irritation; H319 (99.6%): Causes serious eye irritation; H335 (28.4%): May cause respiratory irritation。中文说明：这是工业化学品的 ECHA C&L 通报汇总分类，不是化妆品成品的刺激性结论。",
+          "claim_types": ["irritancy"],
+          "structured": {"irritancy": {"level": "moderate", "mapping": "H315 皮肤刺激 -> moderate", "text": "ECHA C&L 汇总分类含 H315「造成皮肤刺激」（28.6% 的通报），以及 H319「造成严重眼刺激」（99.6%）。该分类来自工业化学品通报汇总，不是化妆品成品的刺激性结论。"}}
+        },
+        {
+          "locator": "Safety and Hazards > Regulatory Information > FDA Requirements",
+          "heading": "食品与膳食相关监管信息",
+          "text": "Substance added directly to human food affirmed as generally recognized as safe (GRAS). 中文说明：该物质被直接添加到人类食品中并被确认为一般认为安全（GRAS），并作为营养强化剂用于膳食补充。",
+          "claim_types": ["life_extension"],
+          "structured": {"life_extension": {"kind": "diet", "text": "该物质也被直接添加到人类食品中并被确认为 GRAS，可作为营养强化剂用于膳食补充（来源为化学品监管信息，不构成饮食建议，也不替代外用产品）。"}}
+        }
+      ]
+    },
+    {
+      "key": "SRC-REAL-PUBCHEM-SALICYLIC",
+      "product_key": null,
+      "source_type": "science_database",
+      "title": "PubChem CID 338 · Salicylic Acid（水杨酸）记录",
+      "publisher": "National Center for Biotechnology Information (NCBI), NLM, NIH — PubChem",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/338",
+      "file_ref": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/338/JSON",
+      "region": "INT",
+      "retrieved_at": "2026-10-15T12:38:04+00:00",
+      "reviewed_at": "2026-10-15T13:00:00+00:00",
+      "status": "approved",
+      "approval_note": "真实公开来源，URL/端点实测可访问；审核人=demo_seed（MVP 演示流程）。该记录同时含更严格的工业 GHS 分类（H318 严重眼损伤），此处按化妆品面霜实测结论保守标注为 low。",
+      "is_demo": false,
+      "chunks": [
+        {
+          "locator": "Drug and Medication Information > Therapeutic Uses（CIR 功能表）",
+          "heading": "化妆品原料功能（CIR）",
+          "text": "Cosmetic ingredient functions of Salicylic Acid and its salts: Antiacne agent, Antidanduff agent, Corn/callus/wart remover, Denaturant, Hair-conditioning agent, and Skin-conditioning agent (miscellaneous). 中文说明：水杨酸在化妆品中的原料功能包括抗痤疮、抗头皮屑、皮肤调理等。",
+          "claim_types": ["effect"],
+          "structured": {"effect_text": "化妆品原料功能包括抗痤疮剂、抗头皮屑剂、皮肤调理剂（CIR 功能表）"}
+        },
+        {
+          "locator": "Drug and Medication Information > Therapeutic Uses",
+          "heading": "OTC 外用制剂浓度",
+          "text": "Salicylic acid has been present in OTC topical acne preparations (at concentrations of 2% to 5%). 中文说明：水杨酸长期用于非处方外用抗痤疮制剂，浓度范围为 2%–5%。",
+          "claim_types": ["effect"],
+          "structured": {"effect_text": "长期用于非处方外用抗痤疮制剂，浓度 2%–5%"}
+        },
+        {
+          "locator": "Safety and Hazards > Hazards Identification > Skin, Eye, and Respiratory Irritations",
+          "heading": "刺激性证据",
+          "text": "A facial cosmetic cream containing 1.5% salicylic acid, with a normalized score of 147.5, was classified as slightly irritating. 中文说明：一项含 1.5% 水杨酸的面部护肤霜被归类为“轻微刺激”。",
+          "claim_types": ["irritancy"],
+          "structured": {"irritancy": {"level": "low", "mapping": "来源明确写 slightly irritating -> low", "text": "一项含 1.5% 水杨酸的面部护肤霜按标准化评分被归类为“轻微刺激”（来源：PubChem 收录的刺激性记录）。"}}
+        }
+      ]
+    },
+    {
+      "key": "SRC-REAL-PUBCHEM-RETINOL",
+      "product_key": null,
+      "source_type": "science_database",
+      "title": "PubChem CID 445354 · Retinol（视黄醇）记录",
+      "publisher": "National Center for Biotechnology Information (NCBI), NLM, NIH — PubChem",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/445354",
+      "file_ref": "https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/445354/JSON",
+      "region": "INT",
+      "retrieved_at": "2026-10-15T12:38:04+00:00",
+      "reviewed_at": "2026-10-15T13:00:00+00:00",
+      "status": "approved",
+      "approval_note": "真实公开来源。注意：该记录中没有任何关于化妆品光稳定性或“需配合防晒”的表述，因此没有生成此类生活延伸；生活延伸仅限来源自身的避光/避空气储存与温度表述。审核人=demo_seed。",
+      "is_demo": false,
+      "chunks": [
+        {
+          "locator": "Use and Manufacturing > Uses > Use Classification",
+          "heading": "化妆品用途分类",
+          "text": "Cosmetics -> Skin conditioning. 中文说明：视黄醇在化妆品中的用途分类为“皮肤调理”。",
+          "claim_types": ["effect"],
+          "structured": {"effect_text": "在化妆品中的用途分类为皮肤调理（Skin conditioning）"}
+        },
+        {
+          "locator": "Safety and Hazards > Hazards Identification > GHS Classification",
+          "heading": "GHS 危害分类（ECHA C&L 汇总）",
+          "text": "H317 (74.9%): May cause an allergic skin reaction; H319 (75.6%): Causes serious eye irritation; H360 (88.1%): May damage fertility or the unborn child. 中文说明：该分类来自工业化学品的 ECHA C&L 通报汇总，并非化妆品成品的刺激性结论。",
+          "claim_types": ["irritancy"],
+          "structured": {"irritancy": {"level": "high", "mapping": "H317 皮肤致敏 -> high", "text": "ECHA C&L 通报汇总中 74.9% 的报告将该物质分类为 H317「可能导致皮肤过敏反应」。该分类来自工业化学品通报汇总，不是化妆品成品的刺激性结论。"}}
+        },
+        {
+          "locator": "Safety and Hazards > Handling and Storage > Storage Conditions",
+          "heading": "储存条件",
+          "text": "Vitamin A is unstable in, and should be protected from, air and light. Vitamin A preparations should be stored at a temperature less than 40 °C, preferably between 15-30 °C. 中文说明：维生素A对空气和光不稳定，应避光避空气保存；制剂宜存放于 40°C 以下，最好在 15–30°C。",
+          "claim_types": ["life_extension"],
+          "structured": {"life_extension": {"kind": "storage", "text": "维生素A对空气和光不稳定，应避光、避免空气暴露保存；制剂宜存放于 40°C 以下，最好在 15–30°C（来源为该物质的储存条件说明）。"}}
+        }
+      ]
+    }
+  ],
+  "ingredients": [
+    {
+      "key": "R01",
+      "inci_name": "Niacinamide",
+      "common_name": "烟酰胺",
+      "categories": ["serum"],
+      "typical_period": "any",
+      "approval_status": "approved",
+      "is_demo": false,
+      "source_keys": ["SRC-REAL-PUBCHEM-NIACINAMIDE"],
+      "effects": [
+        {"text": "登记为化妆品原料，CIR 归类为个人护理成分（润肤剂—酰胺类），作用类别为 Smoothing（柔滑/平滑）", "source_key": "SRC-REAL-PUBCHEM-NIACINAMIDE", "locator": "Chemical and Physical Properties > Chemical Classes > Cosmetics"}
+      ],
+      "irritant_level": "moderate",
+      "irritant_notes": [
+        {"text": "ECHA C&L 汇总分类含 H315「造成皮肤刺激」（28.6% 的通报）与 H319「造成严重眼刺激」（99.6%）。该分类来自工业化学品通报汇总，不是化妆品成品的刺激性结论。", "source_key": "SRC-REAL-PUBCHEM-NIACINAMIDE", "locator": "Safety and Hazards > Hazards Identification > GHS Classification"}
+      ],
+      "life_extensions": [
+        {"kind": "diet", "text": "该物质也被直接添加到人类食品中并被确认为 GRAS，可作为营养强化剂用于膳食补充（来源为化学品监管信息，不构成饮食建议，也不替代外用产品）。", "source_key": "SRC-REAL-PUBCHEM-NIACINAMIDE", "locator": "Safety and Hazards > Regulatory Information > FDA Requirements"}
+      ]
+    },
+    {
+      "key": "R02",
+      "inci_name": "Salicylic Acid",
+      "common_name": "水杨酸",
+      "categories": ["exfoliant"],
+      "typical_period": "evening",
+      "approval_status": "approved",
+      "is_demo": false,
+      "source_keys": ["SRC-REAL-PUBCHEM-SALICYLIC"],
+      "effects": [
+        {"text": "化妆品原料功能包括抗痤疮剂、抗头皮屑剂、皮肤调理剂（CIR 功能表）", "source_key": "SRC-REAL-PUBCHEM-SALICYLIC", "locator": "Drug and Medication Information > Therapeutic Uses（CIR 功能表）"},
+        {"text": "长期用于非处方外用抗痤疮制剂，浓度 2%–5%", "source_key": "SRC-REAL-PUBCHEM-SALICYLIC", "locator": "Drug and Medication Information > Therapeutic Uses"}
+      ],
+      "irritant_level": "low",
+      "irritant_notes": [
+        {"text": "一项含 1.5% 水杨酸的面部护肤霜按标准化评分被归类为“轻微刺激”。", "source_key": "SRC-REAL-PUBCHEM-SALICYLIC", "locator": "Safety and Hazards > Hazards Identification > Skin, Eye, and Respiratory Irritations"}
+      ],
+      "life_extensions": []
+    },
+    {
+      "key": "R03",
+      "inci_name": "Retinol",
+      "common_name": "视黄醇（维生素A）",
+      "categories": ["serum"],
+      "typical_period": "evening",
+      "approval_status": "approved",
+      "is_demo": false,
+      "source_keys": ["SRC-REAL-PUBCHEM-RETINOL"],
+      "effects": [
+        {"text": "在化妆品中的用途分类为皮肤调理（Skin conditioning）", "source_key": "SRC-REAL-PUBCHEM-RETINOL", "locator": "Use and Manufacturing > Uses > Use Classification"}
+      ],
+      "irritant_level": "high",
+      "irritant_notes": [
+        {"text": "ECHA C&L 通报汇总中 74.9% 的报告将该物质分类为 H317「可能导致皮肤过敏反应」。该分类来自工业化学品通报汇总，不是化妆品成品的刺激性结论。", "source_key": "SRC-REAL-PUBCHEM-RETINOL", "locator": "Safety and Hazards > Hazards Identification > GHS Classification"}
+      ],
+      "life_extensions": [
+        {"kind": "storage", "text": "维生素A对空气和光不稳定，应避光、避免空气暴露保存；制剂宜存放于 40°C 以下，最好在 15–30°C（来源为该物质的储存条件说明）。", "source_key": "SRC-REAL-PUBCHEM-RETINOL", "locator": "Safety and Hazards > Handling and Storage > Storage Conditions"}
+      ]
+    }
+  ],
+  "products": [
+    {
+      "key": "RCV",
+      "brand": "CeraVe",
+      "name": "Moisturizing Cream",
+      "category": "moisturizer",
+      "region": "US",
+      "variant": "16 oz",
+      "formula_version": "US-16oz",
+      "size": "16 oz",
+      "aliases": ["CeraVe Moisturizing Cream", "适乐肤保湿霜", "CeraVe 保湿霜"],
+      "verification_status": "real_verified",
+      "is_demo": false,
+      "notes": "真实 SKU：成分表与使用说明来自品牌美国官网公开页面（2026-10-15 实测抓取）。",
+      "source": {
+        "key": "SRC-REAL-CERAVE-MC",
+        "source_type": "official_page",
+        "title": "CeraVe Moisturizing Cream · 官方成分表与使用说明",
+        "publisher": "CeraVe (L'Oréal USA) — 品牌官方网站",
+        "url": "https://www.cerave.com/skincare/moisturizers/moisturizing-cream",
+        "region": "US",
+        "applies_to_variant": "16 oz",
+        "retrieved_at": "2026-10-15T12:38:04+00:00",
+        "reviewed_at": "2026-10-15T13:00:00+00:00",
+        "status": "approved",
+        "approval_note": "真实品牌官网页面，URL 与引文实测核对；审核人=demo_seed（MVP 演示流程），非品牌官方审核。",
+        "is_demo": false,
+        "chunks": [
+          {
+            "locator": "See Full Ingredient List",
+            "heading": "完整成分表（原文）",
+            "text": "AQUA / WATER / EAU, GLYCERIN, CETEARYL ALCOHOL, CAPRYLIC/CAPRIC TRIGLYCERIDE, CETYL ALCOHOL, CETEARETH-20, PETROLATUM, POTASSIUM PHOSPHATE, CERAMIDE NP, CERAMIDE AP, CERAMIDE EOP, CARBOMER, DIMETHICONE, BEHENTRIMONIUM METHOSULFATE, SODIUM LAUROYL LACTYLATE, SODIUM HYALURONATE, CHOLESTEROL, PHENOXYETHANOL, DISODIUM EDTA, DIPOTASSIUM PHOSPHATE, TOCOPHEROL, PHYTOSPHINGOSINE, XANTHAN GUM, ETHYLHEXYLGLYCERIN",
+            "claim_types": ["ingredient"],
+            "structured": {"ingredients": [
+              {"inci": "Ceramide NP", "common_name": "神经酰胺 NP", "role": "active", "period": "any"},
+              {"inci": "Ceramide AP", "common_name": "神经酰胺 AP", "role": "active", "period": "any"},
+              {"inci": "Ceramide EOP", "common_name": "神经酰胺 EOP", "role": "active", "period": "any"},
+              {"inci": "Sodium Hyaluronate", "common_name": "透明质酸钠", "role": "active", "period": "any"},
+              {"inci": "Petrolatum", "common_name": "凡士林", "role": "active", "period": "any"},
+              {"inci": "Dimethicone", "common_name": "聚二甲基硅氧烷", "role": "active", "period": "any"}
+            ]}
+          },
+          {
+            "locator": "How To Use",
+            "heading": "使用说明（原文）",
+            "text": "How To Steps 1 Apply liberally as often as needed to your face and body, day or night.",
+            "claim_types": ["usage_instruction", "frequency"],
+            "structured": {"period": "any", "order_hint": "after_serum", "frequency_text": "按需使用，早晚均可（as often as needed, day or night）"}
+          }
+        ]
+      }
+    },
+    {
+      "key": "RTO",
+      "brand": "The Ordinary",
+      "name": "Niacinamide 10% + Zinc 1%",
+      "category": "serum",
+      "region": "US",
+      "variant": "30ml",
+      "formula_version": "US-30ml",
+      "size": "30ml",
+      "aliases": ["The Ordinary Niacinamide", "烟酰胺 10% + 锌 1%", "TO 烟酰胺精华"],
+      "verification_status": "real_verified",
+      "is_demo": false,
+      "notes": "真实 SKU：成分表与使用说明来自品牌美国官网公开页面（2026-10-15 实测抓取）。",
+      "source": {
+        "key": "SRC-REAL-TO-NIACINAMIDE",
+        "source_type": "official_page",
+        "title": "The Ordinary Niacinamide 10% + Zinc 1% · 官方成分表与使用说明",
+        "publisher": "The Ordinary (DECIEM Beauty Group Inc.) — 品牌官方网站",
+        "url": "https://theordinary.com/en-us/niacinamide-10-zinc-1-serum-100436.html",
+        "region": "US",
+        "applies_to_variant": "30ml",
+        "retrieved_at": "2026-10-15T12:38:04+00:00",
+        "reviewed_at": "2026-10-15T13:00:00+00:00",
+        "status": "approved",
+        "approval_note": "真实品牌官网页面，URL 与引文实测核对（注意原 100431 链接会跳转到别的产品，已改用 100436）。审核人=demo_seed（MVP 演示流程），非品牌官方审核。",
+        "is_demo": false,
+        "chunks": [
+          {
+            "locator": "Ingredients",
+            "heading": "完整成分表（原文）",
+            "text": "Aqua (Water), Niacinamide, Pentylene Glycol, Zinc PCA, Dimethyl Isosorbide, Tamarindus Indica Seed Gum, Xanthan Gum, Isoceteth-20, Ethoxydiglycol, Phenoxyethanol, Chlorphenesin.",
+            "claim_types": ["ingredient"],
+            "structured": {"ingredients": [
+              {"inci": "Niacinamide", "common_name": "烟酰胺", "role": "active", "period": "any"},
+              {"inci": "Zinc PCA", "common_name": "吡咯烷酮羧酸锌", "role": "active", "period": "any"}
+            ]}
+          },
+          {
+            "locator": "Directions",
+            "heading": "使用说明（原文）",
+            "text": "Apply a few drops to the face in the morning and evening. If irritation occurs, rinse off, cease use, and consult a physician. Use only as directed on unbroken skin. Patch testing prior to use is advised.",
+            "claim_types": ["usage_instruction", "frequency"],
+            "structured": {"period": "any", "order_hint": "after_toner", "frequency_text": "早晚各一次，每次数滴（morning and evening）"}
+          }
+        ]
+      }
+    },
+    {
+      "key": "RLRP",
+      "brand": "La Roche-Posay",
+      "name": "Anthelios UVMune 400 Invisible Fluid SPF50+",
+      "category": "sunscreen",
+      "region": "EU",
+      "variant": "50ml",
+      "formula_version": "EU-50ml",
+      "size": "50 ml",
+      "aliases": ["Anthelios UVMune 400", "理肤泉防晒", "LRP UVMune 400"],
+      "verification_status": "real_verified",
+      "is_demo": false,
+      "notes": "真实 SKU：成分表与使用说明来自品牌官方德国站（EU 区域）公开页面；美国站返回 403。抓取时间 2026-10-15。",
+      "source": {
+        "key": "SRC-REAL-LRP-UVMUNE400",
+        "source_type": "official_page",
+        "title": "Anthelios UVMune 400 Invisible Fluid LSF 50+ · 官方成分表与使用说明",
+        "publisher": "La Roche-Posay (L'Oréal) — 品牌官方德国站（EU）",
+        "url": "https://www.larocheposay.de/anthelios/anthelios-uvmune-400-invisible-fluid-lsf-50plus",
+        "region": "EU",
+        "applies_to_variant": "50ml",
+        "retrieved_at": "2026-10-15T12:38:04+00:00",
+        "reviewed_at": "2026-10-15T13:00:00+00:00",
+        "status": "approved",
+        "approval_note": "真实品牌官网页面（.us/.co.uk/.ca/.fr 返回 403，改用官方德国站），URL 与引文实测核对；区域标注为 EU。审核人=demo_seed（MVP 演示流程），非品牌官方审核。",
+        "is_demo": false,
+        "chunks": [
+          {
+            "locator": "Ingredients (JSON-LD)",
+            "heading": "完整成分表（原文）",
+            "text": "AQUA / WATER / EAU, ALCOHOL DENAT., SILICA, DIISOPROPYL SEBACATE, DICAPRYLYL CARBONATE, ETHYLHEXYL TRIAZONE, BUTYL METHOXYDIBENZOYLMETHANE, BIS-ETHYLHEXYLOXYPHENOL METHOXYPHENYL TRIAZINE, GLYCERIN, DIETHYLAMINO HYDROXYBENZOYL HEXYL BENZOATE, TOCOPHEROL, METHOXYPROPYLAMINO CYCLOHEXENYLIDENE ETHOXYETHYLCYANOACETATE, DROMETRIZOLE TRISILOXANE, TEREPHTHALYLIDENE DICAMPHOR SULFONIC ACID (F.I.L.N70050090/1)",
+            "claim_types": ["ingredient"],
+            "structured": {"ingredients": [
+              {"inci": "Ethylhexyl Triazone", "common_name": "乙基己基三嗪酮", "role": "active", "period": "morning"},
+              {"inci": "Butyl Methoxydibenzoylmethane", "common_name": "丁基甲氧基二苯甲酰基甲烷", "role": "active", "period": "morning"},
+              {"inci": "Bis-Ethylhexyloxyphenol Methoxyphenyl Triazine", "common_name": "双-乙基己氧苯酚甲氧苯基三嗪", "role": "active", "period": "morning"},
+              {"inci": "Methoxypropylamino Cyclohexenylidene Ethoxyethylcyanoacetate", "common_name": "MEXORYL 400", "role": "active", "period": "morning"}
+            ]}
+          },
+          {
+            "locator": "ANWENDUNG（schema.org HowTo）",
+            "heading": "使用说明（原文，德语/EU 页面）",
+            "text": "Trage etwa 2–3 Fingerlängen auf Gesicht, Hals und Dekolleté auf. 20 Minuten vor dem Aufenthalt in der Sonne, als letzten Schritt deiner Hautpflegeroutine. Mehrfach auftragen, um den Lichtschutz aufrechtzuerhalten, insbesondere beim Schwitzen oder nach dem Schwimmen.",
+            "claim_types": ["usage_instruction", "frequency", "order_dependency"],
+            "structured": {"period": "morning", "order_hint": "last_step_morning", "frequency_text": "出门前 20 分钟使用，作为护肤最后一步；出汗或游泳后需补涂"}
+          }
+        ]
+      }
+    }
+  ]
+}

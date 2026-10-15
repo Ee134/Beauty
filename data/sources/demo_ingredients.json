@@ -1,0 +1,436 @@
+{
+  "_meta": {
+    "notice": "全部为虚构演示成分（INCI 名称以 Demo 开头，is_demo=true）。不代表真实化合物、真实功效或真实致敏性。开发 Agent 未编造真实成分资料。",
+    "negative_fixtures": [
+      "I05 的 life_extensions 故意指向一份 status=pending 的来源（SRC-I05-DRAFT），用于验证 AC48：无 approved 来源支持的生活延伸必须不展示。",
+      "I06 没有任何来源，用于验证 AC46：图鉴显示“暂无充分信息”，不展示功效/致敏性。",
+      "I07 有两份 approved 但相互冲突的来源，用于验证 8.1.1：进入 pending_review，不选边。"
+    ]
+  },
+  "sources": [
+    {
+      "key": "SRC-I01",
+      "product_key": null,
+      "source_type": "demo_authored",
+      "title": "《演示成分资料：Demo Hydra-Glucan（虚构）》",
+      "publisher": "BeautyCare 演示数据（虚构）",
+      "file_ref": "demo://ingredients/I01",
+      "region": "CN",
+      "retrieved_at": "2026-09-01T00:00:00+00:00",
+      "reviewed_at": "2026-09-05T00:00:00+00:00",
+      "status": "approved",
+      "approval_note": "虚构演示成分资料，演示流程标记 approved。",
+      "is_demo": true,
+      "chunks": [
+        {
+          "locator": "功效",
+          "heading": "已知功效（演示）",
+          "text": "演示资料：Demo Hydra-Glucan 在演示配方中作为保湿类成分使用。",
+          "claim_types": ["effect"],
+          "structured": {"effect_text": "在演示配方中作为保湿类成分使用"}
+        },
+        {
+          "locator": "致敏性",
+          "heading": "致敏性（演示）",
+          "text": "演示资料未记录该成分的致敏性信息。",
+          "claim_types": ["irritancy"],
+          "structured": {"irritancy": {"level": "unknown", "text": ""}}
+        }
+      ]
+    },
+    {
+      "key": "SRC-I02",
+      "product_key": null,
+      "source_type": "demo_authored",
+      "title": "《演示成分资料：Demo Calm-Complex（虚构）》",
+      "publisher": "BeautyCare 演示数据（虚构）",
+      "file_ref": "demo://ingredients/I02",
+      "region": "CN",
+      "retrieved_at": "2026-09-01T00:00:00+00:00",
+      "reviewed_at": "2026-09-05T00:00:00+00:00",
+      "status": "approved",
+      "approval_note": "虚构演示成分资料。",
+      "is_demo": true,
+      "chunks": [
+        {
+          "locator": "功效",
+          "heading": "已知功效（演示）",
+          "text": "演示资料：Demo Calm-Complex 在演示配方中作为舒缓类成分使用。",
+          "claim_types": ["effect"],
+          "structured": {"effect_text": "在演示配方中作为舒缓类成分使用"}
+        },
+        {
+          "locator": "致敏性",
+          "heading": "致敏性（演示）",
+          "text": "演示资料未记录该成分的致敏性信息。",
+          "claim_types": ["irritancy"],
+          "structured": {"irritancy": {"level": "unknown", "text": ""}}
+        }
+      ]
+    },
+    {
+      "key": "SRC-I03",
+      "product_key": null,
+      "source_type": "demo_authored",
+      "title": "《演示成分资料：Demo Retinoid Ester（虚构）》",
+      "publisher": "BeautyCare 演示数据（虚构）",
+      "file_ref": "demo://ingredients/I03",
+      "region": "CN",
+      "retrieved_at": "2026-09-01T00:00:00+00:00",
+      "reviewed_at": "2026-09-05T00:00:00+00:00",
+      "status": "approved",
+      "approval_note": "虚构演示成分资料。",
+      "is_demo": true,
+      "chunks": [
+        {
+          "locator": "功效",
+          "heading": "已知功效（演示）",
+          "text": "演示资料：Demo Retinoid Ester 在演示配方中作为夜间使用的焕活类成分。",
+          "claim_types": ["effect"],
+          "structured": {"effect_text": "在演示配方中作为夜间使用的焕活类成分"}
+        },
+        {
+          "locator": "致敏性",
+          "heading": "致敏性（演示）",
+          "text": "演示资料：部分使用者可能出现干燥或刺痛感，建议从低频率开始使用。",
+          "claim_types": ["irritancy"],
+          "structured": {"irritancy": {"level": "moderate", "text": "可能出现干燥或刺痛感，建议从低频率开始"}}
+        },
+        {
+          "locator": "生活场景延伸",
+          "heading": "生活场景延伸（演示）",
+          "text": "演示资料：含此成分的产品建议晚间使用；白天注意防晒。",
+          "claim_types": ["life_extension"],
+          "structured": {"life_extension": {"kind": "sun_care", "text": "含此成分的产品建议晚间使用；白天注意防晒"}}
+        }
+      ]
+    },
+    {
+      "key": "SRC-I04",
+      "product_key": null,
+      "source_type": "demo_authored",
+      "title": "《演示成分资料：Demo Photo-Shield（虚构）》",
+      "publisher": "BeautyCare 演示数据（虚构）",
+      "file_ref": "demo://ingredients/I04",
+      "region": "CN",
+      "retrieved_at": "2026-09-01T00:00:00+00:00",
+      "reviewed_at": "2026-09-05T00:00:00+00:00",
+      "status": "approved",
+      "approval_note": "虚构演示成分资料。",
+      "is_demo": true,
+      "chunks": [
+        {
+          "locator": "功效",
+          "heading": "已知功效（演示）",
+          "text": "演示资料：Demo Photo-Shield 在演示配方中作为紫外线防护相关成分使用。",
+          "claim_types": ["effect"],
+          "structured": {"effect_text": "在演示配方中作为紫外线防护相关成分使用"}
+        },
+        {
+          "locator": "致敏性",
+          "heading": "致敏性（演示）",
+          "text": "演示资料未记录该成分的致敏性信息。",
+          "claim_types": ["irritancy"],
+          "structured": {"irritancy": {"level": "unknown", "text": ""}}
+        }
+      ]
+    },
+    {
+      "key": "SRC-I05",
+      "product_key": null,
+      "source_type": "demo_authored",
+      "title": "《演示成分资料：Demo Clarify Acid（虚构）》",
+      "publisher": "BeautyCare 演示数据（虚构）",
+      "file_ref": "demo://ingredients/I05",
+      "region": "CN",
+      "retrieved_at": "2026-09-01T00:00:00+00:00",
+      "reviewed_at": "2026-09-05T00:00:00+00:00",
+      "status": "approved",
+      "approval_note": "虚构演示成分资料。",
+      "is_demo": true,
+      "chunks": [
+        {
+          "locator": "功效",
+          "heading": "已知功效（演示）",
+          "text": "演示资料：Demo Clarify Acid 在演示配方中作为去角质类成分使用。",
+          "claim_types": ["effect"],
+          "structured": {"effect_text": "在演示配方中作为去角质类成分使用"}
+        },
+        {
+          "locator": "致敏性",
+          "heading": "致敏性（演示）",
+          "text": "演示资料：含去角质成分，频繁使用可能增加刺激风险。",
+          "claim_types": ["irritancy"],
+          "structured": {"irritancy": {"level": "moderate", "text": "频繁使用可能增加刺激风险"}}
+        }
+      ]
+    },
+    {
+      "key": "SRC-I05-DRAFT",
+      "product_key": null,
+      "source_type": "demo_authored",
+      "title": "《演示成分资料：Demo Clarify Acid 饮食延伸（未审核草稿）》",
+      "publisher": "BeautyCare 演示数据（虚构）",
+      "file_ref": "demo://ingredients/I05/draft",
+      "region": "CN",
+      "retrieved_at": "2026-09-20T00:00:00+00:00",
+      "reviewed_at": null,
+      "status": "pending",
+      "approval_note": "未审核草稿：不得用于任何面向用户的延伸主张（AC48 负样本）。",
+      "is_demo": true,
+      "chunks": [
+        {
+          "locator": "饮食延伸（草稿）",
+          "heading": "未审核草稿",
+          "text": "草稿内容，未审核，不得展示。",
+          "claim_types": ["life_extension"],
+          "structured": {}
+        }
+      ]
+    },
+    {
+      "key": "SRC-I07A",
+      "product_key": null,
+      "source_type": "demo_authored",
+      "title": "《演示成分资料：Demo Amber-Active 版本 A（虚构）》",
+      "publisher": "BeautyCare 演示数据（虚构）",
+      "file_ref": "demo://ingredients/I07/a",
+      "region": "CN",
+      "retrieved_at": "2026-08-01T00:00:00+00:00",
+      "reviewed_at": "2026-08-02T00:00:00+00:00",
+      "status": "approved",
+      "approval_note": "与 SRC-I07B 冲突：两者均 approved 但描述不一致，成分进入 pending_review。",
+      "is_demo": true,
+      "conflict_group": "I07-conflict",
+      "chunks": [
+        {
+          "locator": "功效 A",
+          "heading": "已知功效（演示·版本 A）",
+          "text": "演示资料 A：Demo Amber-Active 在演示配方中作为抗氧化类成分使用。",
+          "claim_types": ["effect"],
+          "structured": {"effect_text": "在演示配方中作为抗氧化类成分使用"}
+        }
+      ]
+    },
+    {
+      "key": "SRC-I07B",
+      "product_key": null,
+      "source_type": "demo_authored",
+      "title": "《演示成分资料：Demo Amber-Active 版本 B（虚构）》",
+      "publisher": "BeautyCare 演示数据（虚构）",
+      "file_ref": "demo://ingredients/I07/b",
+      "region": "CN",
+      "retrieved_at": "2026-08-10T00:00:00+00:00",
+      "reviewed_at": "2026-08-11T00:00:00+00:00",
+      "status": "approved",
+      "approval_note": "与 SRC-I07A 冲突：两者均 approved 但描述不一致，成分进入 pending_review。",
+      "is_demo": true,
+      "conflict_group": "I07-conflict",
+      "chunks": [
+        {
+          "locator": "功效 B",
+          "heading": "已知功效（演示·版本 B）",
+          "text": "演示资料 B：Demo Amber-Active 在演示配方中作为增稠类成分使用，不提供抗氧化相关描述。",
+          "claim_types": ["effect"],
+          "structured": {"effect_text": "在演示配方中作为增稠类成分使用"}
+        }
+      ]
+    },
+    {
+      "key": "SRC-I08",
+      "product_key": null,
+      "source_type": "demo_authored",
+      "title": "《演示成分资料：Demo Cleansing Betaine（虚构）》",
+      "publisher": "BeautyCare 演示数据（虚构）",
+      "file_ref": "demo://ingredients/I08",
+      "region": "CN",
+      "retrieved_at": "2026-09-01T00:00:00+00:00",
+      "reviewed_at": "2026-09-05T00:00:00+00:00",
+      "status": "approved",
+      "approval_note": "虚构演示成分资料。",
+      "is_demo": true,
+      "chunks": [
+        {
+          "locator": "功效",
+          "heading": "已知功效（演示）",
+          "text": "演示资料：Demo Cleansing Betaine 在演示配方中作为清洁类表面活性成分使用。",
+          "claim_types": ["effect"],
+          "structured": {"effect_text": "在演示配方中作为清洁类表面活性成分使用"}
+        }
+      ]
+    },
+    {
+      "key": "SRC-I09",
+      "product_key": null,
+      "source_type": "demo_authored",
+      "title": "《演示成分资料：Demo Ceramide-Like（虚构）》",
+      "publisher": "BeautyCare 演示数据（虚构）",
+      "file_ref": "demo://ingredients/I09",
+      "region": "CN",
+      "retrieved_at": "2026-09-01T00:00:00+00:00",
+      "reviewed_at": "2026-09-05T00:00:00+00:00",
+      "status": "approved",
+      "approval_note": "虚构演示成分资料。",
+      "is_demo": true,
+      "chunks": [
+        {
+          "locator": "功效",
+          "heading": "已知功效（演示）",
+          "text": "演示资料：Demo Ceramide-Like 在演示配方中作为屏障修护相关成分使用。",
+          "claim_types": ["effect"],
+          "structured": {"effect_text": "在演示配方中作为屏障修护相关成分使用"}
+        },
+        {
+          "locator": "致敏性",
+          "heading": "致敏性（演示）",
+          "text": "演示资料未记录该成分的致敏性信息。",
+          "claim_types": ["irritancy"],
+          "structured": {"irritancy": {"level": "unknown", "text": ""}}
+        }
+      ]
+    }
+  ],
+  "ingredients": [
+    {
+      "key": "I01",
+      "inci_name": "Demo Hydra-Glucan",
+      "common_name": "澄泉保湿多糖",
+      "categories": ["moisturizer", "serum", "toner", "sunscreen", "cleanser"],
+      "typical_period": "any",
+      "approval_status": "approved",
+      "is_demo": true,
+      "source_keys": ["SRC-I01"],
+      "effects": [{"text": "在演示配方中作为保湿类成分使用", "source_key": "SRC-I01", "locator": "功效"}],
+      "irritant_level": "unknown",
+      "irritant_notes": [],
+      "life_extensions": []
+    },
+    {
+      "key": "I02",
+      "inci_name": "Demo Calm-Complex",
+      "common_name": "澄泉舒缓复合物",
+      "categories": ["serum", "moisturizer", "treatment"],
+      "typical_period": "any",
+      "approval_status": "approved",
+      "is_demo": true,
+      "source_keys": ["SRC-I02"],
+      "effects": [{"text": "在演示配方中作为舒缓类成分使用", "source_key": "SRC-I02", "locator": "功效"}],
+      "irritant_level": "unknown",
+      "irritant_notes": [],
+      "life_extensions": []
+    },
+    {
+      "key": "I03",
+      "inci_name": "Demo Retinoid Ester",
+      "common_name": "澄泉类视黄醇酯",
+      "categories": ["serum"],
+      "typical_period": "evening",
+      "approval_status": "approved",
+      "is_demo": true,
+      "source_keys": ["SRC-I03"],
+      "effects": [{"text": "在演示配方中作为夜间使用的焕活类成分", "source_key": "SRC-I03", "locator": "功效"}],
+      "irritant_level": "moderate",
+      "irritant_notes": [
+        {"text": "可能出现干燥或刺痛感，建议从低频率开始", "source_key": "SRC-I03", "locator": "致敏性"}
+      ],
+      "life_extensions": [
+        {"kind": "sun_care", "text": "含此成分的产品建议晚间使用；白天注意防晒", "source_key": "SRC-I03", "locator": "生活场景延伸"}
+      ]
+    },
+    {
+      "key": "I04",
+      "inci_name": "Demo Photo-Shield",
+      "common_name": "澄泉光护因子",
+      "categories": ["sunscreen"],
+      "typical_period": "morning",
+      "approval_status": "approved",
+      "is_demo": true,
+      "source_keys": ["SRC-I04"],
+      "effects": [{"text": "在演示配方中作为紫外线防护相关成分使用", "source_key": "SRC-I04", "locator": "功效"}],
+      "irritant_level": "unknown",
+      "irritant_notes": [],
+      "life_extensions": []
+    },
+    {
+      "key": "I05",
+      "inci_name": "Demo Clarify Acid",
+      "common_name": "澄泉净澈酸",
+      "categories": ["toner", "serum", "exfoliant", "treatment"],
+      "typical_period": "any",
+      "approval_status": "approved",
+      "is_demo": true,
+      "source_keys": ["SRC-I05"],
+      "effects": [{"text": "在演示配方中作为去角质类成分使用", "source_key": "SRC-I05", "locator": "功效"}],
+      "irritant_level": "moderate",
+      "irritant_notes": [
+        {"text": "频繁使用可能增加刺激风险", "source_key": "SRC-I05", "locator": "致敏性"}
+      ],
+      "life_extensions": [
+        {
+          "kind": "diet",
+          "text": "多吃含此成分的食物对皮肤好",
+          "source_key": "SRC-I05-DRAFT",
+          "locator": "饮食延伸（草稿）"
+        }
+      ]
+    },
+    {
+      "key": "I06",
+      "inci_name": "Demo Mystic Extract",
+      "common_name": "澄泉神秘提取物",
+      "categories": ["serum"],
+      "typical_period": "morning",
+      "approval_status": "insufficient",
+      "is_demo": true,
+      "source_keys": [],
+      "effects": [],
+      "irritant_level": "unknown",
+      "irritant_notes": [],
+      "life_extensions": []
+    },
+    {
+      "key": "I07",
+      "inci_name": "Demo Amber-Active",
+      "common_name": "澄泉琥珀活性物",
+      "categories": ["serum"],
+      "typical_period": "morning",
+      "approval_status": "pending_review",
+      "conflict_flag": true,
+      "conflict_note": "两份 approved 来源对同一成分的描述不一致，进入待审核，不选边。",
+      "is_demo": true,
+      "source_keys": ["SRC-I07A", "SRC-I07B"],
+      "effects": [],
+      "irritant_level": "unknown",
+      "irritant_notes": [],
+      "life_extensions": []
+    },
+    {
+      "key": "I08",
+      "inci_name": "Demo Cleansing Betaine",
+      "common_name": "澄泉洁面甜菜碱",
+      "categories": ["cleanser"],
+      "typical_period": "any",
+      "approval_status": "approved",
+      "is_demo": true,
+      "source_keys": ["SRC-I08"],
+      "effects": [{"text": "在演示配方中作为清洁类表面活性成分使用", "source_key": "SRC-I08", "locator": "功效"}],
+      "irritant_level": "unknown",
+      "irritant_notes": [],
+      "life_extensions": []
+    },
+    {
+      "key": "I09",
+      "inci_name": "Demo Ceramide-Like",
+      "common_name": "澄泉类神经酰胺",
+      "categories": ["moisturizer"],
+      "typical_period": "any",
+      "approval_status": "approved",
+      "is_demo": true,
+      "source_keys": ["SRC-I09"],
+      "effects": [{"text": "在演示配方中作为屏障修护相关成分使用", "source_key": "SRC-I09", "locator": "功效"}],
+      "irritant_level": "unknown",
+      "irritant_notes": [],
+      "life_extensions": []
+    }
+  ]
+}

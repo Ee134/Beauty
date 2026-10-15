@@ -1,0 +1,16 @@
+{
+  "_meta": {
+    "notice": "手动选择的城市目录（MVP 默认不做精确定位、不做持续轨迹跟踪）。坐标仅用于天气查询。",
+    "provider": "demo fixture"
+  },
+  "cities": [
+    {"city_id": "CN-GZ", "name_zh": "广州", "name_en": "Guangzhou", "country": "CN", "timezone": "Asia/Shanghai", "latitude": 23.1291, "longitude": 113.2644, "forecast_days": 3, "profile": "humid_subtropical"},
+    {"city_id": "CN-BJ", "name_zh": "北京", "name_en": "Beijing", "country": "CN", "timezone": "Asia/Shanghai", "latitude": 39.9042, "longitude": 116.4074, "forecast_days": 3, "profile": "dry_north"},
+    {"city_id": "CN-SH", "name_zh": "上海", "name_en": "Shanghai", "country": "CN", "timezone": "Asia/Shanghai", "latitude": 31.2304, "longitude": 121.4737, "forecast_days": 3, "profile": "humid_subtropical"},
+    {"city_id": "CN-SZ", "name_zh": "深圳", "name_en": "Shenzhen", "country": "CN", "timezone": "Asia/Shanghai", "latitude": 22.5431, "longitude": 114.0579, "forecast_days": 3, "profile": "humid_subtropical"},
+    {"city_id": "CN-CD", "name_zh": "成都", "name_en": "Chengdu", "country": "CN", "timezone": "Asia/Shanghai", "latitude": 30.5728, "longitude": 104.0668, "forecast_days": 3, "profile": "basin_cloudy"},
+    {"city_id": "CN-HA", "name_zh": "海口", "name_en": "Haikou", "country": "CN", "timezone": "Asia/Shanghai", "latitude": 20.0444, "longitude": 110.1999, "forecast_days": 3, "profile": "tropical_high_uv"},
+    {"city_id": "CN-HRB", "name_zh": "哈尔滨", "name_en": "Harbin", "country": "CN", "timezone": "Asia/Shanghai", "latitude": 45.8038, "longitude": 126.5350, "forecast_days": 2, "profile": "cold_dry"},
+    {"city_id": "CN-LXA", "name_zh": "拉萨", "name_en": "Lhasa", "country": "CN", "timezone": "Asia/Shanghai", "latitude": 29.6520, "longitude": 91.1721, "forecast_days": 2, "profile": "plateau_very_high_uv"}
+  ]
+}

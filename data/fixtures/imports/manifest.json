@@ -1,0 +1,56 @@
+{
+  "_meta": {
+    "notice": "内置演示截图与识别样本（全部虚构）。mock 模式按 sha256 匹配，不代表真实识别能力。",
+    "generated_by": "scripts/make_demo_fixtures.py"
+  },
+  "fixtures": [
+    {
+      "filename": "demo_order_screenshot_1.png",
+      "sha256": "212e227d21cb932af3d24e180e7d7b6d85e067f54baa7f02ca30f23b9e305cd8",
+      "notice": "演示样本：mock 模式按文件哈希匹配，不代表真实 OCR/视觉识别能力。",
+      "raw_text": "DEMO 演示订单截图（虚构数据）\n订单确认 · 2026-10-10\n澄泉 DEMO 轻透防晒乳 SPF50+ PA++++  50ml x 1  ¥129.00\n澄泉 DEMO 净澈去角质凝胶  75ml x 1  ¥89.00",
+      "candidates": [
+        {
+          "raw_name": "澄泉 DEMO 轻透防晒乳 SPF50+ PA++++",
+          "brand": "澄泉 DEMO",
+          "quantity": 1,
+          "size": "50ml",
+          "confidence": 0.93,
+          "evidence_text": "澄泉 DEMO 轻透防晒乳 SPF50+ PA++++ 50ml x 1"
+        },
+        {
+          "raw_name": "澄泉 DEMO 净澈去角质凝胶",
+          "brand": "澄泉 DEMO",
+          "quantity": 1,
+          "size": "75ml",
+          "confidence": 0.88,
+          "evidence_text": "澄泉 DEMO 净澈去角质凝胶 75ml x 1"
+        }
+      ]
+    },
+    {
+      "filename": "demo_order_screenshot_2.png",
+      "sha256": "f63138a4f1ed2b8ee9d9c6d4d6ac8624be1cdb1df22767635c693986184db7a0",
+      "notice": "演示样本：含一件资料缺失的产品，用于 AC05/AC42 演示。",
+      "raw_text": "DEMO 演示订单截图（虚构数据）\n订单确认 · 2026-09-28\n澄泉 DEMO 水润保湿乳  100ml x 2  ¥99.00\n澄泉 DEMO 深海修护精华  30ml x 1  ¥169.00",
+      "candidates": [
+        {
+          "raw_name": "澄泉 DEMO 水润保湿乳",
+          "brand": "澄泉 DEMO",
+          "quantity": 2,
+          "size": "100ml",
+          "confidence": 0.95,
+          "evidence_text": "澄泉 DEMO 水润保湿乳 100ml x 2"
+        },
+        {
+          "raw_name": "澄泉 DEMO 深海修护精华",
+          "brand": "澄泉 DEMO",
+          "quantity": 1,
+          "size": "30ml",
+          "confidence": 0.52,
+          "evidence_text": "澄泉 DEMO 深海修护精华 30ml x 1（目录中无批准资料，需人工确认）"
+        }
+      ]
+    }
+  ]
+}

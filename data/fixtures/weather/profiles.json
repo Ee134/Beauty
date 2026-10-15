@@ -1,0 +1,93 @@
+{
+  "_meta": {
+    "notice": "演示天气数据（虚构，mode=mock、is_demo=true）。数值由 mock 适配器按城市气候档案与日期确定性生成，仅用于演示触发与文案逻辑，不是真实观测或预报。",
+    "units": {"temperature": "°C", "humidity": "%", "wind_speed": "m/s", "uv_index": "index (无量纲)", "precipitation": "mm"}
+  },
+  "profiles": {
+    "humid_subtropical": {
+      "current": {"temperature_c": 29.0, "relative_humidity": 78, "wind_speed_ms": 2.6, "uv_index": 7, "precipitation_mm": 0.4, "condition": "多云"},
+      "daily": [
+        {"temperature_max_c": 31.0, "temperature_min_c": 25.0, "relative_humidity": 80, "uv_index_max": 8, "precipitation_mm": 3.0, "condition": "阵雨"},
+        {"temperature_max_c": 32.0, "temperature_min_c": 26.0, "relative_humidity": 76, "uv_index_max": 9, "precipitation_mm": 0.2, "condition": "多云"},
+        {"temperature_max_c": 30.0, "temperature_min_c": 25.0, "relative_humidity": 82, "uv_index_max": 6, "precipitation_mm": 6.5, "condition": "雷阵雨"}
+      ]
+    },
+    "dry_north": {
+      "current": {"temperature_c": 19.0, "relative_humidity": 34, "wind_speed_ms": 4.1, "uv_index": 5, "precipitation_mm": 0.0, "condition": "晴"},
+      "daily": [
+        {"temperature_max_c": 22.0, "temperature_min_c": 10.0, "relative_humidity": 30, "uv_index_max": 6, "precipitation_mm": 0.0, "condition": "晴"},
+        {"temperature_max_c": 21.0, "temperature_min_c": 9.0, "relative_humidity": 27, "uv_index_max": 6, "precipitation_mm": 0.0, "condition": "晴间多云"},
+        {"temperature_max_c": 18.0, "temperature_min_c": 8.0, "relative_humidity": 25, "uv_index_max": 4, "precipitation_mm": 0.0, "condition": "阴"}
+      ]
+    },
+    "basin_cloudy": {
+      "current": {"temperature_c": 21.0, "relative_humidity": 72, "wind_speed_ms": 1.4, "uv_index": 3, "precipitation_mm": 0.0, "condition": "阴"},
+      "daily": [
+        {"temperature_max_c": 24.0, "temperature_min_c": 16.0, "relative_humidity": 74, "uv_index_max": 4, "precipitation_mm": 0.6, "condition": "阴"},
+        {"temperature_max_c": 23.0, "temperature_min_c": 16.0, "relative_humidity": 76, "uv_index_max": 3, "precipitation_mm": 1.2, "condition": "小雨"},
+        {"temperature_max_c": 25.0, "temperature_min_c": 17.0, "relative_humidity": 70, "uv_index_max": 5, "precipitation_mm": 0.0, "condition": "多云"}
+      ]
+    },
+    "tropical_high_uv": {
+      "current": {"temperature_c": 31.0, "relative_humidity": 82, "wind_speed_ms": 3.2, "uv_index": 10, "precipitation_mm": 0.0, "condition": "晴"},
+      "daily": [
+        {"temperature_max_c": 33.0, "temperature_min_c": 27.0, "relative_humidity": 81, "uv_index_max": 11, "precipitation_mm": 0.8, "condition": "晴"},
+        {"temperature_max_c": 32.0, "temperature_min_c": 27.0, "relative_humidity": 84, "uv_index_max": 10, "precipitation_mm": 4.4, "condition": "雷阵雨"},
+        {"temperature_max_c": 33.0, "temperature_min_c": 28.0, "relative_humidity": 80, "uv_index_max": 11, "precipitation_mm": 0.0, "condition": "晴"}
+      ]
+    },
+    "cold_dry": {
+      "current": {"temperature_c": -6.0, "relative_humidity": 41, "wind_speed_ms": 5.3, "uv_index": 2, "precipitation_mm": 0.0, "condition": "晴"},
+      "daily": [
+        {"temperature_max_c": -2.0, "temperature_min_c": -14.0, "relative_humidity": 40, "uv_index_max": 2, "precipitation_mm": 0.0, "condition": "晴"},
+        {"temperature_max_c": -5.0, "temperature_min_c": -18.0, "relative_humidity": 44, "uv_index_max": 1, "precipitation_mm": 0.3, "condition": "阵雪"}
+      ]
+    },
+    "plateau_very_high_uv": {
+      "current": {"temperature_c": 12.0, "relative_humidity": 28, "wind_speed_ms": 3.8, "uv_index": 12, "precipitation_mm": 0.0, "condition": "晴"},
+      "daily": [
+        {"temperature_max_c": 18.0, "temperature_min_c": 1.0, "relative_humidity": 26, "uv_index_max": 13, "precipitation_mm": 0.0, "condition": "晴"},
+        {"temperature_max_c": 17.0, "temperature_min_c": 0.0, "relative_humidity": 24, "uv_index_max": 12, "precipitation_mm": 0.0, "condition": "晴"}
+      ]
+    }
+  },
+  "scenarios": {
+    "default": {"description": "正常演示数据：全部字段可用。", "missing_fields": [], "quality": "ok"},
+    "dry_spell": {
+      "description": "湿度明显下降场景（用于 US-09 / AC25 / AC31）。",
+      "humidity_multiplier": 0.55,
+      "missing_fields": [],
+      "quality": "ok"
+    },
+    "high_uv": {
+      "description": "紫外线偏高场景（用于 US-08 / AC27）。",
+      "uv_multiplier": 1.6,
+      "missing_fields": [],
+      "quality": "ok"
+    },
+    "missing_uv": {
+      "description": "预报缺少 UV 字段场景（AC24）：字段为 null，不得以 0 代替。",
+      "drop_fields": ["uv_index", "uv_index_max"],
+      "missing_fields": ["uv_index", "uv_index_max"],
+      "quality": "partial"
+    },
+    "stale": {
+      "description": "数据过时场景（AC24 / AC31）：issued_at 早于最大缓存年龄。",
+      "issued_offset_minutes": -600,
+      "missing_fields": [],
+      "quality": "stale"
+    },
+    "api_failure": {
+      "description": "提供方失败场景（AC24）：返回 unavailable，不静默使用 mock 伪装 live。",
+      "fail": true,
+      "missing_fields": [],
+      "quality": "unavailable"
+    },
+    "beyond_coverage": {
+      "description": "预报不覆盖场景（AC26）：超出覆盖范围的日期必须为未知。",
+      "forecast_days_override": 1,
+      "missing_fields": [],
+      "quality": "partial"
+    }
+  }
+}

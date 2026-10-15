@@ -1,0 +1,594 @@
+{
+  "_meta": {
+    "notice": "全部为虚构演示资料（source_type=demo_authored、is_demo=true、发行方标注虚构）。不代表任何真实品牌说明、真实成分表或真实使用频率。开发 Agent 未编造真实 SKU 资料。",
+    "spec": "BeautyCare_Agent_Spec_v1_2.md 第 8 节"
+  },
+  "sources": [
+    {
+      "key": "SRC-D01",
+      "product_key": "D01",
+      "source_type": "demo_authored",
+      "title": "《澄泉 DEMO 温和洁面啫喱 使用说明（虚构演示资料）》",
+      "publisher": "BeautyCare 演示数据（虚构）",
+      "file_ref": "demo://chengquan/D01/instructions-v1",
+      "region": "CN",
+      "applies_to_variant": "150ml",
+      "retrieved_at": "2026-09-01T00:00:00+00:00",
+      "reviewed_at": "2026-09-02T00:00:00+00:00",
+      "status": "approved",
+      "approval_note": "演示流程录入并标记 approved；非真实品牌审核。",
+      "is_demo": true,
+      "chunks": [
+        {
+          "locator": "p.1 使用方法",
+          "heading": "使用方法",
+          "text": "湿润面部后取适量本品，轻柔打圈按摩约 30 秒，以清水彻底冲洗。避开眼周。",
+          "claim_types": ["usage_instruction"],
+          "structured": {"period": "any", "order_hint": "first_step"}
+        },
+        {
+          "locator": "p.1 使用频率",
+          "heading": "使用频率",
+          "text": "每日早晚各一次。",
+          "claim_types": ["frequency"],
+          "structured": {"frequency_text": "每日早晚各一次", "period": "any"}
+        },
+        {
+          "locator": "p.2 成分",
+          "heading": "演示成分表",
+          "text": "演示成分（虚构）：Demo Cleansing Betaine、Demo Hydra-Glucan。",
+          "claim_types": ["ingredient"],
+          "structured": {
+            "ingredients": [
+              {"inci": "Demo Cleansing Betaine", "common_name": "澄泉洁面甜菜碱", "role": "surfactant", "period": "any"},
+              {"inci": "Demo Hydra-Glucan", "common_name": "澄泉保湿多糖", "role": "active", "period": "any"}
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "key": "SRC-D02",
+      "product_key": "D02",
+      "source_type": "demo_authored",
+      "title": "《澄泉 DEMO 平衡爽肤水 使用说明（虚构演示资料）》",
+      "publisher": "BeautyCare 演示数据（虚构）",
+      "file_ref": "demo://chengquan/D02/instructions-v1",
+      "region": "CN",
+      "applies_to_variant": "200ml",
+      "retrieved_at": "2026-09-01T00:00:00+00:00",
+      "reviewed_at": "2026-09-02T00:00:00+00:00",
+      "status": "approved",
+      "approval_note": "演示流程录入并标记 approved；非真实品牌审核。",
+      "is_demo": true,
+      "chunks": [
+        {
+          "locator": "p.1 使用方法",
+          "heading": "使用方法",
+          "text": "洁面后取适量于掌心，轻拍于面部至吸收，随后使用精华或保湿产品。",
+          "claim_types": ["usage_instruction"],
+          "structured": {"period": "any", "order_hint": "after_cleanser"}
+        },
+        {
+          "locator": "p.1 使用频率",
+          "heading": "使用频率",
+          "text": "每日早晚各一次。",
+          "claim_types": ["frequency"],
+          "structured": {"frequency_text": "每日早晚各一次", "period": "any"}
+        },
+        {
+          "locator": "p.2 成分",
+          "heading": "演示成分表",
+          "text": "演示成分（虚构）：Demo Hydra-Glucan、Demo Clarify Acid。",
+          "claim_types": ["ingredient"],
+          "structured": {
+            "ingredients": [
+              {"inci": "Demo Hydra-Glucan", "common_name": "澄泉保湿多糖", "role": "active", "period": "any"},
+              {"inci": "Demo Clarify Acid", "common_name": "澄泉净澈酸", "role": "active", "period": "any"}
+            ]
+          }
+        },
+        {
+          "locator": "p.2 注意事项",
+          "heading": "注意事项",
+          "text": "本品含 Demo Clarify Acid。与含同类成分的产品叠加使用可能增加刺激风险，建议错开使用或降低使用频次。",
+          "claim_types": ["order_dependency", "irritancy"],
+          "structured": {
+            "combination_caution": {
+              "inci": "Demo Clarify Acid",
+              "text": "与含同类成分的产品叠加使用可能增加刺激风险，建议错开使用或降低使用频次。",
+              "options": ["keep", "space_out", "remove_one"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "SRC-D03",
+      "product_key": "D03",
+      "source_type": "demo_authored",
+      "title": "《澄泉 DEMO 光感精华 v2 使用说明（虚构演示资料）》",
+      "publisher": "BeautyCare 演示数据（虚构）",
+      "file_ref": "demo://chengquan/D03/instructions-v2",
+      "region": "CN",
+      "applies_to_variant": "30ml",
+      "retrieved_at": "2026-09-01T00:00:00+00:00",
+      "reviewed_at": "2026-09-03T00:00:00+00:00",
+      "status": "approved",
+      "approval_note": "演示流程录入并标记 approved；非真实品牌审核。仅适用于 v2 配方。",
+      "is_demo": true,
+      "chunks": [
+        {
+          "locator": "p.1 使用方法",
+          "heading": "使用方法",
+          "text": "爽肤水后取 2-3 滴，均匀涂抹于面部，避开眼周。",
+          "claim_types": ["usage_instruction"],
+          "structured": {"period": "any", "order_hint": "after_toner"}
+        },
+        {
+          "locator": "p.1 使用频率",
+          "heading": "使用频率",
+          "text": "每日使用一次。",
+          "claim_types": ["frequency"],
+          "structured": {"frequency_text": "每日使用一次", "period": "any"}
+        },
+        {
+          "locator": "p.2 成分",
+          "heading": "演示成分表",
+          "text": "演示成分（虚构）：Demo Clarify Acid、Demo Hydra-Glucan。",
+          "claim_types": ["ingredient"],
+          "structured": {
+            "ingredients": [
+              {"inci": "Demo Clarify Acid", "common_name": "澄泉净澈酸", "role": "active", "period": "any"},
+              {"inci": "Demo Hydra-Glucan", "common_name": "澄泉保湿多糖", "role": "active", "period": "any"}
+            ]
+          }
+        },
+        {
+          "locator": "p.2 注意事项",
+          "heading": "注意事项",
+          "text": "本品含 Demo Clarify Acid。与含同类成分的产品叠加使用可能增加刺激风险，建议错开使用或降低使用频次。",
+          "claim_types": ["order_dependency", "irritancy"],
+          "structured": {
+            "combination_caution": {
+              "inci": "Demo Clarify Acid",
+              "text": "与含同类成分的产品叠加使用可能增加刺激风险，建议错开使用或降低使用频次。",
+              "options": ["keep", "space_out", "remove_one"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "SRC-D03-V1",
+      "product_key": "D03V1",
+      "source_type": "demo_authored",
+      "title": "《澄泉 DEMO 光感精华 v1 使用说明（虚构演示资料，旧版本）》",
+      "publisher": "BeautyCare 演示数据（虚构）",
+      "file_ref": "demo://chengquan/D03/instructions-v1",
+      "region": "CN",
+      "applies_to_variant": "30ml",
+      "retrieved_at": "2025-06-01T00:00:00+00:00",
+      "reviewed_at": "2025-06-02T00:00:00+00:00",
+      "status": "approved",
+      "approval_note": "旧配方版本的演示资料，用于验证版本匹配（AC03）。",
+      "is_demo": true,
+      "chunks": [
+        {
+          "locator": "p.1 使用方法（v1）",
+          "heading": "使用方法",
+          "text": "每日晚间取适量涂抹于面部。v1 配方不含 Demo Clarify Acid。",
+          "claim_types": ["usage_instruction", "ingredient"],
+          "structured": {"period": "evening", "ingredients": [{"inci": "Demo Hydra-Glucan", "common_name": "澄泉保湿多糖", "role": "active", "period": "evening"}]}
+        }
+      ]
+    },
+    {
+      "key": "SRC-D04",
+      "product_key": "D04",
+      "source_type": "demo_authored",
+      "title": "《澄泉 DEMO 舒缓精华 使用说明（虚构演示资料）》",
+      "publisher": "BeautyCare 演示数据（虚构）",
+      "file_ref": "demo://chengquan/D04/instructions-v1",
+      "region": "CN",
+      "applies_to_variant": "30ml",
+      "retrieved_at": "2026-09-01T00:00:00+00:00",
+      "reviewed_at": "2026-09-02T00:00:00+00:00",
+      "status": "approved",
+      "approval_note": "演示流程录入并标记 approved；非真实品牌审核。",
+      "is_demo": true,
+      "chunks": [
+        {
+          "locator": "p.1 使用方法",
+          "heading": "使用方法",
+          "text": "爽肤水后取适量涂抹于面部，可每日使用。",
+          "claim_types": ["usage_instruction"],
+          "structured": {"period": "any", "order_hint": "after_toner"}
+        },
+        {
+          "locator": "p.1 使用频率",
+          "heading": "使用频率",
+          "text": "每日使用一次，需要时可早晚各一次。",
+          "claim_types": ["frequency"],
+          "structured": {"frequency_text": "每日一次", "period": "any"}
+        },
+        {
+          "locator": "p.2 成分",
+          "heading": "演示成分表",
+          "text": "演示成分（虚构）：Demo Calm-Complex、Demo Hydra-Glucan。",
+          "claim_types": ["ingredient"],
+          "structured": {
+            "ingredients": [
+              {"inci": "Demo Calm-Complex", "common_name": "澄泉舒缓复合物", "role": "active", "period": "any"},
+              {"inci": "Demo Hydra-Glucan", "common_name": "澄泉保湿多糖", "role": "active", "period": "any"}
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "key": "SRC-D05",
+      "product_key": "D05",
+      "source_type": "demo_authored",
+      "title": "《澄泉 DEMO 焕活精华 使用说明（虚构演示资料）》",
+      "publisher": "BeautyCare 演示数据（虚构）",
+      "file_ref": "demo://chengquan/D05/instructions-v1",
+      "region": "CN",
+      "applies_to_variant": "30ml",
+      "retrieved_at": "2026-09-01T00:00:00+00:00",
+      "reviewed_at": "2026-09-03T00:00:00+00:00",
+      "status": "approved",
+      "approval_note": "演示流程录入并标记 approved；非真实品牌审核。",
+      "is_demo": true,
+      "chunks": [
+        {
+          "locator": "p.1 使用方法",
+          "heading": "使用方法",
+          "text": "仅于晚间使用。洁面、爽肤水后取少量涂抹，避免与含 Demo Clarify Acid 的产品在同一晚叠加使用。",
+          "claim_types": ["usage_instruction", "order_dependency"],
+          "structured": {
+            "period": "evening",
+            "order_hint": "after_toner",
+            "interleave_with_inci": ["Demo Clarify Acid"]
+          }
+        },
+        {
+          "locator": "p.1 使用频率",
+          "heading": "使用频率",
+          "text": "初期建议每周使用 2 次，皮肤适应后可逐步增加至隔日一次。",
+          "claim_types": ["frequency"],
+          "structured": {"frequency_text": "初期每周 2 次，可逐步增加至隔日一次", "period": "evening"}
+        },
+        {
+          "locator": "p.2 成分",
+          "heading": "演示成分表",
+          "text": "演示成分（虚构）：Demo Retinoid Ester。",
+          "claim_types": ["ingredient"],
+          "structured": {
+            "ingredients": [
+              {"inci": "Demo Retinoid Ester", "common_name": "澄泉类视黄醇酯", "role": "active", "period": "evening", "note": "演示成分，非真实视黄醇。"}
+            ]
+          }
+        },
+        {
+          "locator": "p.2 注意事项",
+          "heading": "注意事项",
+          "text": "使用本品期间建议白天注意防晒；如出现不适请暂停使用并咨询专业人士。",
+          "claim_types": ["irritancy", "life_extension"],
+          "structured": {
+            "irritancy": {"level": "moderate", "text": "部分使用者可能出现干燥或刺痛感，建议从低频率开始。"},
+            "life_extension": {"kind": "sun_care", "text": "含此成分的产品建议晚间使用；白天注意防晒"}
+          }
+        }
+      ]
+    },
+    {
+      "key": "SRC-D06",
+      "product_key": "D06",
+      "source_type": "demo_authored",
+      "title": "《澄泉 DEMO 维C亮肤精华 使用说明（虚构演示资料）》",
+      "publisher": "BeautyCare 演示数据（虚构）",
+      "file_ref": "demo://chengquan/D06/instructions-v1",
+      "region": "CN",
+      "applies_to_variant": "20ml",
+      "retrieved_at": "2026-09-01T00:00:00+00:00",
+      "reviewed_at": "2026-09-02T00:00:00+00:00",
+      "status": "approved",
+      "approval_note": "演示流程录入并标记 approved；非真实品牌审核。",
+      "is_demo": true,
+      "chunks": [
+        {
+          "locator": "p.1 使用方法",
+          "heading": "使用方法",
+          "text": "晨间使用，洁面后取适量涂抹于面部，之后使用保湿与防晒产品。",
+          "claim_types": ["usage_instruction"],
+          "structured": {"period": "morning", "order_hint": "before_sunscreen"}
+        },
+        {
+          "locator": "p.1 使用频率",
+          "heading": "使用频率",
+          "text": "每日晨间一次。",
+          "claim_types": ["frequency"],
+          "structured": {"frequency_text": "每日晨间一次", "period": "morning"}
+        },
+        {
+          "locator": "p.2 成分",
+          "heading": "演示成分表",
+          "text": "演示成分（虚构）：Demo Mystic Extract、Demo Amber-Active。",
+          "claim_types": ["ingredient"],
+          "structured": {
+            "ingredients": [
+              {"inci": "Demo Mystic Extract", "common_name": "澄泉神秘提取物", "role": "active", "period": "morning"},
+              {"inci": "Demo Amber-Active", "common_name": "澄泉琥珀活性物", "role": "active", "period": "morning"}
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "key": "SRC-D07",
+      "product_key": "D07",
+      "source_type": "demo_authored",
+      "title": "《澄泉 DEMO 水润保湿乳 使用说明（虚构演示资料）》",
+      "publisher": "BeautyCare 演示数据（虚构）",
+      "file_ref": "demo://chengquan/D07/instructions-v1",
+      "region": "CN",
+      "applies_to_variant": "100ml",
+      "retrieved_at": "2026-09-01T00:00:00+00:00",
+      "reviewed_at": "2026-09-02T00:00:00+00:00",
+      "status": "approved",
+      "approval_note": "演示流程录入并标记 approved；非真实品牌审核。",
+      "is_demo": true,
+      "chunks": [
+        {
+          "locator": "p.1 使用方法",
+          "heading": "使用方法",
+          "text": "精华后取适量涂抹于面部与颈部，早晚均可使用。",
+          "claim_types": ["usage_instruction"],
+          "structured": {"period": "any", "order_hint": "after_serum"}
+        },
+        {
+          "locator": "p.1 使用频率",
+          "heading": "使用频率",
+          "text": "每日早晚各一次。",
+          "claim_types": ["frequency"],
+          "structured": {"frequency_text": "每日早晚各一次", "period": "any"}
+        },
+        {
+          "locator": "p.2 成分",
+          "heading": "演示成分表",
+          "text": "演示成分（虚构）：Demo Hydra-Glucan、Demo Ceramide-Like。",
+          "claim_types": ["ingredient"],
+          "structured": {
+            "ingredients": [
+              {"inci": "Demo Hydra-Glucan", "common_name": "澄泉保湿多糖", "role": "active", "period": "any"},
+              {"inci": "Demo Ceramide-Like", "common_name": "澄泉类神经酰胺", "role": "active", "period": "any"}
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "key": "SRC-D08",
+      "product_key": "D08",
+      "source_type": "demo_authored",
+      "title": "《澄泉 DEMO 轻透防晒乳 使用说明（虚构演示资料）》",
+      "publisher": "BeautyCare 演示数据（虚构）",
+      "file_ref": "demo://chengquan/D08/instructions-v1",
+      "region": "CN",
+      "applies_to_variant": "50ml",
+      "retrieved_at": "2026-09-01T00:00:00+00:00",
+      "reviewed_at": "2026-09-03T00:00:00+00:00",
+      "status": "approved",
+      "approval_note": "演示流程录入并标记 approved；SPF 数值为演示数据，非真实检测结果。",
+      "is_demo": true,
+      "chunks": [
+        {
+          "locator": "p.1 使用方法",
+          "heading": "使用方法",
+          "text": "晨间护肤最后一步使用，取足量均匀涂抹于面部与颈部；长时间户外活动时每 2-3 小时补涂一次。",
+          "claim_types": ["usage_instruction", "frequency"],
+          "structured": {"period": "morning", "order_hint": "last_step_morning", "frequency_text": "户外每 2-3 小时补涂"}
+        },
+        {
+          "locator": "p.2 成分",
+          "heading": "演示成分表",
+          "text": "演示成分（虚构）：Demo Photo-Shield、Demo Hydra-Glucan。",
+          "claim_types": ["ingredient"],
+          "structured": {
+            "ingredients": [
+              {"inci": "Demo Photo-Shield", "common_name": "澄泉光护因子", "role": "active", "period": "morning"},
+              {"inci": "Demo Hydra-Glucan", "common_name": "澄泉保湿多糖", "role": "active", "period": "morning"}
+            ]
+          }
+        },
+        {
+          "locator": "p.2 防晒说明",
+          "heading": "防晒说明",
+          "text": "标注 SPF50+ / PA++++（演示数据）。紫外线较强时建议配合遮阳帽或遮阳伞使用。",
+          "claim_types": ["effect", "life_extension"],
+          "structured": {"life_extension": {"kind": "sun_care", "text": "紫外线较强时建议配合遮阳帽或遮阳伞使用"}}
+        }
+      ]
+    },
+    {
+      "key": "SRC-D09",
+      "product_key": "D09",
+      "source_type": "demo_authored",
+      "title": "《澄泉 DEMO 修护晚霜 使用说明（虚构演示资料）》",
+      "publisher": "BeautyCare 演示数据（虚构）",
+      "file_ref": "demo://chengquan/D09/instructions-v1",
+      "region": "CN",
+      "applies_to_variant": "50ml",
+      "retrieved_at": "2026-09-01T00:00:00+00:00",
+      "reviewed_at": "2026-09-02T00:00:00+00:00",
+      "status": "approved",
+      "approval_note": "演示流程录入并标记 approved；非真实品牌审核。",
+      "is_demo": true,
+      "chunks": [
+        {
+          "locator": "p.1 使用方法",
+          "heading": "使用方法",
+          "text": "晚间作为护肤最后一步，取适量涂抹于面部与颈部。",
+          "claim_types": ["usage_instruction"],
+          "structured": {"period": "evening", "order_hint": "last_step_evening"}
+        },
+        {
+          "locator": "p.1 使用频率",
+          "heading": "使用频率",
+          "text": "每晚一次。",
+          "claim_types": ["frequency"],
+          "structured": {"frequency_text": "每晚一次", "period": "evening"}
+        },
+        {
+          "locator": "p.2 成分",
+          "heading": "演示成分表",
+          "text": "演示成分（虚构）：Demo Ceramide-Like、Demo Calm-Complex。",
+          "claim_types": ["ingredient"],
+          "structured": {
+            "ingredients": [
+              {"inci": "Demo Ceramide-Like", "common_name": "澄泉类神经酰胺", "role": "active", "period": "evening"},
+              {"inci": "Demo Calm-Complex", "common_name": "澄泉舒缓复合物", "role": "active", "period": "evening"}
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "key": "SRC-D10",
+      "product_key": "D10",
+      "source_type": "demo_authored",
+      "title": "《澄泉 DEMO 净澈去角质凝胶 使用说明（虚构演示资料）》",
+      "publisher": "BeautyCare 演示数据（虚构）",
+      "file_ref": "demo://chengquan/D10/instructions-v1",
+      "region": "CN",
+      "applies_to_variant": "75ml",
+      "retrieved_at": "2026-09-01T00:00:00+00:00",
+      "reviewed_at": "2026-09-03T00:00:00+00:00",
+      "status": "approved",
+      "approval_note": "演示流程录入并标记 approved；非真实品牌审核。",
+      "is_demo": true,
+      "chunks": [
+        {
+          "locator": "p.1 使用方法",
+          "heading": "使用方法",
+          "text": "晚间洁面后取适量涂抹，停留约 5 分钟后冲洗。不要与含 Demo Retinoid Ester 的产品在同一晚叠加。",
+          "claim_types": ["usage_instruction", "order_dependency"],
+          "structured": {"period": "evening", "order_hint": "after_cleanser", "interleave_with_inci": ["Demo Retinoid Ester"]}
+        },
+        {
+          "locator": "p.1 使用频率",
+          "heading": "使用频率",
+          "text": "每周使用 2 次。",
+          "claim_types": ["frequency"],
+          "structured": {"frequency_text": "每周 2 次", "period": "evening"}
+        },
+        {
+          "locator": "p.2 成分",
+          "heading": "演示成分表",
+          "text": "演示成分（虚构）：Demo Clarify Acid。",
+          "claim_types": ["ingredient"],
+          "structured": {
+            "ingredients": [
+              {"inci": "Demo Clarify Acid", "common_name": "澄泉净澈酸", "role": "active", "period": "evening"}
+            ]
+          }
+        },
+        {
+          "locator": "p.2 注意事项",
+          "heading": "注意事项",
+          "text": "本品含 Demo Clarify Acid。与含同类成分的产品叠加使用可能增加刺激风险，建议错开使用或降低使用频次。",
+          "claim_types": ["order_dependency", "irritancy"],
+          "structured": {
+            "irritancy": {"level": "moderate", "text": "含去角质成分，频繁使用可能增加刺激风险。"},
+            "combination_caution": {
+              "inci": "Demo Clarify Acid",
+              "text": "与含同类成分的产品叠加使用可能增加刺激风险，建议错开使用或降低使用频次。",
+              "options": ["keep", "space_out", "remove_one"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "SRC-D11",
+      "product_key": "D11",
+      "source_type": "demo_authored",
+      "title": "《澄泉 DEMO 净痘点涂凝胶 使用说明（虚构演示资料）》",
+      "publisher": "BeautyCare 演示数据（虚构）",
+      "file_ref": "demo://chengquan/D11/instructions-v1",
+      "region": "CN",
+      "applies_to_variant": "15ml",
+      "retrieved_at": "2026-09-01T00:00:00+00:00",
+      "reviewed_at": "2026-09-03T00:00:00+00:00",
+      "status": "approved",
+      "approval_note": "演示流程录入并标记 approved；非真实品牌审核。",
+      "is_demo": true,
+      "chunks": [
+        {
+          "locator": "p.1 使用方法",
+          "heading": "使用方法",
+          "text": "仅在需要时点涂于目标部位，避免大面积涂抹。",
+          "claim_types": ["usage_instruction"],
+          "structured": {"period": "as_needed", "order_hint": "after_moisturizer"}
+        },
+        {
+          "locator": "p.1 使用频率",
+          "heading": "使用频率",
+          "text": "每日不超过 2 次，仅限局部点涂。",
+          "claim_types": ["frequency"],
+          "structured": {"frequency_text": "每日不超过 2 次，局部点涂", "period": "as_needed"}
+        },
+        {
+          "locator": "p.2 成分",
+          "heading": "演示成分表",
+          "text": "演示成分（虚构）：Demo Clarify Acid、Demo Calm-Complex。",
+          "claim_types": ["ingredient"],
+          "structured": {
+            "ingredients": [
+              {"inci": "Demo Clarify Acid", "common_name": "澄泉净澈酸", "role": "active", "period": "as_needed"},
+              {"inci": "Demo Calm-Complex", "common_name": "澄泉舒缓复合物", "role": "active", "period": "as_needed"}
+            ]
+          }
+        },
+        {
+          "locator": "p.2 注意事项",
+          "heading": "注意事项",
+          "text": "本品含 Demo Clarify Acid。与含同类成分的产品叠加使用可能增加刺激风险，建议错开使用或降低使用频次。",
+          "claim_types": ["order_dependency", "irritancy"],
+          "structured": {
+            "combination_caution": {
+              "inci": "Demo Clarify Acid",
+              "text": "与含同类成分的产品叠加使用可能增加刺激风险，建议错开使用或降低使用频次。",
+              "options": ["keep", "space_out", "remove_one"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "SRC-D12-PENDING",
+      "product_key": "D12",
+      "source_type": "demo_authored",
+      "title": "《澄泉 DEMO 深海修护精华 说明（草稿，未审核）》",
+      "publisher": "BeautyCare 演示数据（虚构）",
+      "file_ref": "demo://chengquan/D12/draft",
+      "region": "CN",
+      "applies_to_variant": "30ml",
+      "retrieved_at": "2026-09-20T00:00:00+00:00",
+      "reviewed_at": null,
+      "status": "pending",
+      "approval_note": "尚未审核：演示中该产品没有可用资料，必须进入待确认列表。",
+      "is_demo": true,
+      "chunks": [
+        {
+          "locator": "草稿",
+          "heading": "草稿（未审核，不参与建议）",
+          "text": "本段为未审核草稿，系统不得据此生成任何使用建议。",
+          "claim_types": ["usage_instruction"],
+          "structured": {}
+        }
+      ]
+    }
+  ]
+}
