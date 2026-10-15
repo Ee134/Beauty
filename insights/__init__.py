@@ -1,0 +1,1 @@
+"""Brand insight aggregation."""
