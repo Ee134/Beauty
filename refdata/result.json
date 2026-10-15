@@ -1,0 +1,196 @@
+{
+  "ingredients": [
+    {
+      "inci_name": "Niacinamide",
+      "common_name_zh": "烟酰胺",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/936",
+      "page_title": "Nicotinamide",
+      "publisher": "National Center for Biotechnology Information (NCBI), National Library of Medicine (NLM), NIH — PubChem",
+      "retrieved_at": "2026-10-15T12:38:04Z",
+      "status": "ok",
+      "known_effects": [
+        {
+          "text_zh": "烟酸和烟酰胺用于预防烟酸缺乏并治疗癞皮病；部分临床医生更倾向于用烟酰胺治疗癞皮病，因为它没有血管扩张作用。",
+          "supporting_quote": "Niacin and niacinamide are used to prevent niacin deficiency and to treat pellagra. Some clinicians prefer niacinamide for the treatment of pellagra because it lacks vasodilating effects.",
+          "locator": "Drug and Medication Information > Therapeutic Uses (HSDB record; flagged /Included in US product label/)"
+        },
+        {
+          "text_zh": "烟酰胺被登记为化妆品原料，并被归类为具有“柔滑/平滑（Smoothing）”作用的个人护理产品成分（润肤剂－酰胺类）。",
+          "supporting_quote": "Cosmetic ingredients (Niacinamide) -> CIR (Cosmetic Ingredient Review)",
+          "locator": "Chemical and Physical Properties > Chemical Classes > Cosmetics (additional verbatim entries in the same block: 'Smoothing'; 'Personal care product -> emollient -> amide')"
+        }
+      ],
+      "irritancy": {
+        "level": "low",
+        "text_zh": "ECHA C&L 汇总的 GHS 分类显示：28.6% 的报告分类为 H315“造成皮肤刺激”，99.6% 的报告分类为 H319“造成严重眼刺激”。该分类来自工业化学品的 ECHA C&L 通报汇总，并非化妆品终产品的刺激性结论。",
+        "supporting_quote": "H315 (28.6%): Causes skin irritation [Warning Skin corrosion/irritation] | H319 (99.6%): Causes serious eye irritation [Warning Serious eye damage/eye irritation] | H335 (28.4%): May cause respiratory irritation [Warning Specific target organ toxicity, single exposure; Respiratory tract irritation]",
+        "locator": "Safety and Hazards > Hazards Identification > GHS Classification > GHS Hazard Statements (ECHA C&L Inventory aggregation, ref. 48)"
+      },
+      "life_extension": {
+        "kind": "diet",
+        "text_zh": "该物质被直接添加到人类食品中，并被确认为一般认为安全（GRAS）；同时作为营养强化剂用于膳食补充。",
+        "supporting_quote": "Substance added directly to human food affirmed as generally recognized as safe (GRAS).",
+        "locator": "Safety and Hazards > Regulatory Information > FDA Requirements (also: Food Additives and Ingredients > FDA Substances Added to Food, Used for (Technical Effect): 'FLAVOR ENHANCER, FLAVORING AGENT OR ADJUVANT, NUTRIENT SUPPLEMENT')"
+      },
+      "notes": "PubChem compound page https://pubchem.ncbi.nlm.nih.gov/compound/936 renders behind a reCAPTCHA challenge when fetched directly (HTTP 200 but body is a 'Checking your browser' interstitial), so the record content was retrieved and verified through NCBI's own machine-readable endpoint for the same record: https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/936/JSON (HTTP 200, fetched 2026-10-15). All quotes above are verbatim from that PUG-View record for CID 936 (RecordTitle 'Nicotinamide'). The irritation data is an industrial SDS/GHS aggregation, not a cosmetic-use assessment; INCI name 'Niacinamide' itself was not confirmed on this page (PubChem uses 'Nicotinamide')."
+    },
+    {
+      "inci_name": "Salicylic Acid",
+      "common_name_zh": "水杨酸",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/338",
+      "page_title": "Salicylic Acid",
+      "publisher": "National Center for Biotechnology Information (NCBI), National Library of Medicine (NLM), NIH — PubChem",
+      "retrieved_at": "2026-10-15T12:38:04Z",
+      "status": "ok",
+      "known_effects": [
+        {
+          "text_zh": "水杨酸及其盐在化妆品中的原料功能为：抗痤疮剂、抗头皮屑剂、鸡眼/胼胝/疣去除剂、变性剂、护发剂以及皮肤调理剂（其他类）。",
+          "supporting_quote": "Cosmetic ingredient functions of Salicylic Acid and its salts. Ingredient: Salicylic Acid; Function: Antiacne agent, Antidanduff agent, Corn/callus/wart remover, Denaturant, Hair-conditioning agent, and Skin-conditioning agent (miscellaneous). /From table/",
+          "locator": "Drug and Medication Information > Therapeutic Uses (Cosmetic Ingredient Review functions table)"
+        },
+        {
+          "text_zh": "水杨酸一直用于非处方外用抗痤疮制剂（浓度为 2% 至 5%）、用于毒藤/毒橡树/毒漆树的外用镇痛剂与皮肤保护剂，以及外用抗真菌药品中。",
+          "supporting_quote": "Salicylic acid has been present in OTC topical acne preparations (at concentrations of 2% to 5%), external analgesics and skin protectants used for poison ivy, oak and sumac, and topical antifungal drug products.",
+          "locator": "Drug and Medication Information > Therapeutic Uses"
+        }
+      ],
+      "irritancy": {
+        "level": "low",
+        "text_zh": "一项含 1.5% 水杨酸的面部护肤霜被按标准化评分归类为“轻微刺激”；此外水杨酸粉尘会刺激鼻腔。",
+        "supporting_quote": "A facial cosmetic cream containing 1.5% salicylic acid, with a total score of 415.0 and a normalized score of 147.5, was classified (using the normalized score) as slightly irritating.",
+        "locator": "Safety and Hazards > Hazards Identification > Skin, Eye, and Respiratory Irritations (a further verbatim entry in the same section reads: '/Salicylic acid/ ... dust irritates the nostrils.')"
+      },
+      "life_extension": {
+        "kind": "storage",
+        "text_zh": "该物质被登记为化妆品原料，其功能包括防腐剂（Preservative）与角质剥脱剂（Keratolytic）。",
+        "supporting_quote": "Preservative; Keratolytic",
+        "locator": "Chemical and Physical Properties > Chemical Classes > Cosmetics"
+      },
+      "notes": "PubChem compound page https://pubchem.ncbi.nlm.nih.gov/compound/338 renders behind a reCAPTCHA challenge when fetched directly, so the record content was retrieved and verified through NCBI's own machine-readable endpoint for the same record: https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/338/JSON (HTTP 200, fetched 2026-10-15). All quotes are verbatim from that PUG-View record for CID 338 (RecordTitle 'Salicylic Acid'). The same record also carries a stricter industrial GHS classification (Signal 'Danger'; 'H318: Causes serious eye damage'), which is why the irritancy level is stated conservatively as 'low' based on the cosmetic-cream finding rather than the SDS classification. INCI name 'Salicylic Acid' matches the PubChem record title."
+    },
+    {
+      "inci_name": "Retinol",
+      "common_name_zh": "视黄醇（维生素A）",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/compound/445354",
+      "page_title": "Retinol",
+      "publisher": "National Center for Biotechnology Information (NCBI), National Library of Medicine (NLM), NIH — PubChem",
+      "retrieved_at": "2026-10-15T12:38:04Z",
+      "status": "ok",
+      "known_effects": [
+        {
+          "text_zh": "视黄醇在化妆品中的用途分类为“皮肤调理（Skin conditioning）”。",
+          "supporting_quote": "Cosmetics -> Skin conditioning",
+          "locator": "Use and Manufacturing > Uses > Use Classification"
+        },
+        {
+          "text_zh": "局部外用维生素A可以逆转接受皮质类固醇患者出现的伤口愈合障碍，其机制可能是恢复了伤口正常的炎症反应。",
+          "supporting_quote": "Topical vitamin A can reverse the impairment of wound healing seen in patients receiving corticosteroids, perhaps by restoring the normal inflammatory reaction in the wound.",
+          "locator": "Pharmacology and Biochemistry > Mechanism of Action"
+        }
+      ],
+      "irritancy": {
+        "level": "high",
+        "text_zh": "ECHA C&L 通报汇总的 GHS 分类中，74.9% 的报告将视黄醇分类为 H317“可能导致皮肤过敏反应”，75.6% 分类为 H319“造成严重眼刺激”。该分类来自工业化学品的通报汇总，并非化妆品终产品的刺激性结论。",
+        "supporting_quote": "H302 (15.8%): Harmful if swallowed [Warning Acute toxicity, oral] | H317 (74.9%): May cause an allergic skin reaction [Warning Sensitization, Skin] | H319 (75.6%): Causes serious eye irritation [Warning Serious eye damage/eye irritation] | H360 (88.1%): May damage fertility or the unborn child [Danger Reproductive toxicity] | H413 (74.9%): May cause long lasting harmful effects to aquatic life [Hazardous to the aquatic environment, long-term hazard]",
+        "locator": "Safety and Hazards > Hazards Identification > GHS Classification > GHS Hazard Statements (ECHA C&L Inventory aggregation)"
+      },
+      "life_extension": {
+        "kind": "storage",
+        "text_zh": "维生素A对空气和光不稳定，应加以保护；维生素A制剂应储存在低于 40°C 的温度下，最好在 15–30°C 之间；口服维生素A制剂应存放于密封、避光的容器中，注射液应避光并避免冷冻。",
+        "supporting_quote": "Vitamin A is unstable in, and should be protected from, air and light. Vitamin A preparations should be stored at a temperature less than 40 °C, preferably between 15-30 °C. Oral vitamin A preparations should be stored in tight, light-resistant containers and the injection should be protected from light and freezing.",
+        "locator": "Safety and Hazards > Handling and Storage > Storage Conditions"
+      },
+      "notes": "CID 445154 is NOT retinol (it is resveratrol); the correct PubChem record for retinol is CID 445354, resolved via https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/name/retinol/cids/JSON. The compound page https://pubchem.ncbi.nlm.nih.gov/compound/445354 renders behind a reCAPTCHA challenge when fetched directly, so content was retrieved via https://pubchem.ncbi.nlm.nih.gov/rest/pug_view/data/compound/445354/JSON (HTTP 200, fetched 2026-10-15). All quotes are verbatim from that PUG-View record (RecordTitle 'Retinol'). The page did NOT contain any statement about photostability in a cosmetic formulation or any 'use sunscreen with retinol' advice, so no such claim was extracted; the life_extension entry is limited to the page's own light/air-instability and storage statement. The page's 'irritancy' evidence is an SDS/GHS sensitisation classification, not a cosmetic-use assessment."
+    }
+  ],
+  "products": [
+    {
+      "brand": "CeraVe",
+      "name": "Moisturizing Cream",
+      "category": "Moisturizer (face & body cream)",
+      "region": "US",
+      "size": "16 oz",
+      "url": "https://www.cerave.com/skincare/moisturizers/moisturizing-cream",
+      "publisher": "CeraVe (L'Oreal USA) — official brand website",
+      "retrieved_at": "2026-10-15T12:38:04Z",
+      "status": "ok",
+      "ingredients_text_verbatim": "AQUA / WATER / EAU, GLYCERIN, CETEARYL ALCOHOL, CAPRYLIC/CAPRIC TRIGLYCERIDE, CETYL ALCOHOL, CETEARETH-20, PETROLATUM , POTASSIUM PHOSPHATE, CERAMIDE NP, CERAMIDE AP, CERAMIDE EOP, CARBOMER, DIMETHICONE , BEHENTRIMONIUM METHOSULFATE, SODIUM LAUROYL LACTYLATE, SODIUM HYALURONATE, CHOLESTEROL, PHENOXYETHANOL, DISODIUM EDTA, DIPOTASSIUM PHOSPHATE, TOCOPHEROL, PHYTOSPHINGOSINE, XANTHAN GUM, ETHYLHEXYLGLYCERIN",
+      "directions_text_verbatim": "How To Use / How To Steps 1 Apply liberally as often as needed to your face and body, day or night",
+      "key_actives": [
+        {
+          "name": "Ceramides (Ceramide NP, Ceramide AP, Ceramide EOP)",
+          "snippet": "Ceramides Helps restore your skin's natural barrier, helping to keep moisture in and harmful elements out."
+        },
+        {
+          "name": "Hyaluronic Acid (Sodium Hyaluronate)",
+          "snippet": "Hyaluronic Acid Helps maintain skin's moisture balance to impart a visibly smoother, softer, and healthier-looking glow."
+        },
+        {
+          "name": "Petrolatum",
+          "snippet": "Petrolatum Works to soothe dry, flaky, or irritated skin by creating a physical barrier to help lock in moisture and prevent transepidermal water loss (TEWL)."
+        },
+        {
+          "name": "Dimethicone",
+          "snippet": "Dimenthicone Provides pampering skin conditioning to help improve softness and flexibility."
+        }
+      ],
+      "notes": "Fetched directly from the official US brand site (HTTP 200). The full ingredient list is rendered inside the page's collapsible 'See Full Ingredient List' block; the verbatim string above is exactly as printed (including its original spacing before commas, e.g. 'PETROLATUM ,' and 'DIMETHICONE ,'). The page also prints: 'Please be aware that ingredient lists for the products of our brand are updated regularly. Please refer to the ingredient list on your product package for the most up-to-date list of ingredients to ensure it is suitable to your personal use.' The directions section on the page shows only one step ('Apply liberally as often as needed to your face and body, day or night'); the accompanying time-of-day/routine labels are 'Time of Day: Anytime' and 'Routine Order: Cleanse Tone'. Size '16 oz' comes from the page's own product data for this product entry (data-tag-product-dimension35=\"1-89 fl oz\", variant \"16 oz + 1.89 oz\"); the single stable jar size printed for the base variant is 16 oz. Note the page misspells Dimethicone as 'Dimenthicone' in the Key Ingredients block; that misspelling is preserved in the snippet."
+    },
+    {
+      "brand": "The Ordinary",
+      "name": "Niacinamide 10% + Zinc 1%",
+      "category": "Facial serum",
+      "region": "US",
+      "size": "30ml",
+      "url": "https://theordinary.com/en-us/niacinamide-10-zinc-1-serum-100436.html",
+      "publisher": "The Ordinary (DECIEM Beauty Group Inc.) — official brand website",
+      "retrieved_at": "2026-10-15T12:38:04Z",
+      "status": "ok",
+      "ingredients_text_verbatim": "Aqua (Water), Niacinamide, Pentylene Glycol, Zinc PCA, Dimethyl Isosorbide, Tamarindus Indica Seed Gum, Xanthan Gum, Isoceteth-20, Ethoxydiglycol, Phenoxyethanol, Chlorphenesin.",
+      "directions_text_verbatim": "Apply a few drops to the face in the morning and evening. If irritation occurs, rinse off, cease use, and consult a physician. Use only as directed on unbroken skin. Patch testing prior to use is advised. Keep out of reach of children.",
+      "key_actives": [
+        {
+          "name": "Niacinamide",
+          "snippet": "Ingredients Aqua (Water), Niacinamide, Pentylene Glycol, Zinc PCA, Dimethyl Isosorbide, Tamarindus Indica Seed Gum, Xanthan Gum, Isoceteth-20, Ethoxydiglycol, Phenoxyethanol, Chlorphenesin."
+        },
+        {
+          "name": "Zinc PCA",
+          "snippet": "Ingredients Aqua (Water), Niacinamide, Pentylene Glycol, Zinc PCA, Dimethyl Isosorbide, Tamarindus Indica Seed Gum, Xanthan Gum, Isoceteth-20, Ethoxydiglycol, Phenoxyethanol, Chlorphenesin."
+        }
+      ],
+      "notes": "Fetched directly from the official US brand site (HTTP 200, final URL as recorded). NOTE: an initial guess URL (…niacinamide-10-zinc-1-serum-100431.html) silently redirected to a different product (Matrixyl 10% + HA), so the correct product URL was resolved from the brand's own on-site search results; the URL above is the verified Niacinamide 10% + Zinc 1% page. The page's own product data describes it as name 'Niacinamide 10% + Zinc 1%', category 'Serums', variant '30ml' (SKU rdn-niacinamide-10pct-zinc-1pct-30ml) and description 'A universal serum for blemish-prone skin that smooths, brightens, and supports.' Below the ingredient list the page prints: 'Our formulations are updated from time to time as part of our commitment to innovation. As such, the ingredient list shown here may vary from the box of the product depending on time and region of purchase.' No per-active ingredient claim text is printed on the page, so key_actives are supported only by their presence in the printed INCI list plus the product's own one-line description."
+    },
+    {
+      "brand": "La Roche-Posay",
+      "name": "ANTHELIOS INVISIBLE FLUID UVMUNE 400 LSF 50+",
+      "category": "Facial sunscreen (fluid, SPF 50+)",
+      "region": "EU",
+      "size": "50 ml",
+      "url": "https://www.larocheposay.de/anthelios/anthelios-uvmune-400-invisible-fluid-lsf-50plus",
+      "publisher": "La Roche-Posay (L'Oreal) — official brand website (German/EU site)",
+      "retrieved_at": "2026-10-15T12:38:04Z",
+      "status": "ok",
+      "ingredients_text_verbatim": "AQUA / WATER / EAU,ALCOHOL DENAT.,SILICA,DIISOPROPYL SEBACATE,DICAPRYLYL CARBONATE,ETHYLHEXYL TRIAZONE,BUTYL METHOXYDIBENZOYLMETHANE,BIS-ETHYLHEXYLOXYPHENOL METHOXYPHENYL TRIAZINE,DIISOPROPYL ADIPATE,GLYCERIN,ISOPROPYL MYRISTATE,PROPANEDIOL,C12-22 ALKYL ACRYLATE/HYDROXYETHYLACRYLATE COPOLYMER,DIETHYLAMINO HYDROXYBENZOYL HEXYL BENZOATE,C12-15 ALKYL BENZOATE,TOCOPHEROL,METHOXYPROPYLAMINO CYCLOHEXENYLIDENE ETHOXYETHYLCYANOACETATE,PERLITE,DROMETRIZOLE TRISILOXANE,ACRYLATES/C10-30 ALKYL ACRYLATE CROSSPOLYMER,CITRIC ACID,DISODIUM PHOSPHATE,HYDROXYETHYLCELLULOSE,PENTYLENE GLYCOL,POLYSORBATE 60,SODIUM PHOSPHATE,TEREPHTHALYLIDENE DICAMPHOR SULFONIC ACID,TRIETHANOLAMINE,TRISODIUM ETHYLENEDIAMINE DISUCCINATE (F.I.L.N70050090/1)",
+      "directions_text_verbatim": "Trage etwa 2 – 3 Fingerlängen auf Gesicht, Hals und Dekolleté auf. / 20 Minuten vor dem Aufenthalt in der Sonne, als letzten Schritt deiner Hautpflegeroutine / Auf Gesicht, Hals und Dekolleté und alle unbedeckten Stellen auftragen. / Sanft einmassieren, bis es von der Haut aufgenommen wird",
+      "key_actives": [
+        {
+          "name": "MEXORYL 400 (Methoxypropylamino Cyclohexenylidene Ethoxyethylcyanoacetate)",
+          "snippet": "Die bedeutende Innovation des UV-Schutzes nach 30 Jahren: MEXORYL 400 ist unser wirksamster UV-Filter, der auch vor schädlichen ultralangen UVA-Strahlen bis zu 400 nm schützt."
+        },
+        {
+          "name": "NETLOCK TECHNOLOGY",
+          "snippet": "Die Netlock-Technologie schließt die UV-Filter in einer ultradünnen Schicht ein und bildet so einen unsichtbaren Schutz. Die Formel klebt, fettet und verläuft nicht, sodass ein homogener Schutzschild auf der Haut entsteht."
+        },
+        {
+          "name": "XL-PROTECT",
+          "snippet": "Der Breitspektrum-Schutzfilter bildet eine kraftvolle Mischung aus UV-Filtern und Antioxidantien. Neben einem hochwirksamen Schutz gegen UVA- und UVB-Strahlen wird ein zusätzlicher Schutz vor Infrarotstrahlen und Luftverschmutzung geboten."
+        },
+        {
+          "name": "UV filters listed in the printed INCI list",
+          "snippet": "ETHYLHEXYL TRIAZONE,BUTYL METHOXYDIBENZOYLMETHANE,BIS-ETHYLHEXYLOXYPHENOL METHOXYPHENYL TRIAZINE,…DIETHYLAMINO HYDROXYBENZOYL HEXYL BENZOATE,…DROMETRIZOLE TRISILOXANE"
+        }
+      ],
+      "notes": "The .us, .co.uk, .ca and .fr La Roche-Posay domains returned HTTP 403 (Cloudflare 'Just a moment...' interstitial) and www.laroche-posay.eu did not resolve, so the German EU site was used; it returned HTTP 200 and is an official La Roche-Posay brand site, so region is recorded as 'EU', not 'US'. The page prints the full INCI list (JSON-LD property 'Ingredients', verbatim above, including the original comma-without-space formatting and the '(F.I.L.N70050090/1)' code). Immediately after the INCI list the same page prints in German: 'Intensive Mittagssonne vermeiden. Vor dem Sonnen auftragen. Mehrfach auftragen, um den Lichtschutz aufrechtzuerhalten, insbesondere beim Schwitzen oder nach dem Schwimmen und Abtrocknen. Sonnenschutzmittel großzügig auftragen. Geringe Auftragsmengen reduzieren die Schutzleistung. …' — usage advice that is part of the same printed block. The directions_text_verbatim above is the page's own schema.org 'HowTo' block (section 'ANWENDUNG ANTHELIOS INVISIBLE FLUID UVMUNE 400 LSF 50+'), quoted verbatim in the page's original German. Size '50 ml' is the selected variant ('volumes-detail' size '50 ml', checked=true, EAN 3337875797597)."
+    }
+  ]
+}

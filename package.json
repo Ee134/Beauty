@@ -1,0 +1,13 @@
+{
+  "name": "beautycare-e2e",
+  "private": true,
+  "description": "Playwright end-to-end tests for the BeautyCare MVP (separate from the frontend package).",
+  "scripts": {
+    "e2e": "playwright test",
+    "e2e:install": "playwright install chromium"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.56.1",
+    "@types/node": "24.10.1"
+  }
+}

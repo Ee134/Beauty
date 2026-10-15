@@ -1,0 +1,14 @@
+# pnpm 11 配置（pnpm 11 起不再读取 package.json 的 "pnpm" 字段）。
+#
+# allowBuilds：只放行 esbuild（vite 的依赖）的安装脚本，其余依赖不执行构建脚本。
+# esbuild 的平台二进制由 @esbuild/darwin-arm64 等预编译包提供，放行只是消除
+# ERR_PNPM_IGNORED_BUILDS 造成的非零退出码。
+#
+# overrides：本机 macOS 的 Node 启用库校验（library validation），会拒绝 dlopen
+# rollup 的原生二进制（ad-hoc 签名与 Node 进程 Team ID 不一致）。因此把 rollup
+# 覆盖为官方同版本 WASM 构建 @rollup/wasm-node，无需任何权限提升即可构建。
+allowBuilds:
+  esbuild: true
+
+overrides:
+  rollup: npm:@rollup/wasm-node@4.64.6
